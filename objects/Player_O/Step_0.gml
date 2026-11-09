@@ -48,6 +48,7 @@ break;
 case States.PLAYER_WALK:
 
 var _move = dsin(tim * 5) * 8; 
+var _move1 = dsin(tim * 5) * 1;
 var _arm = dsin(tim * 5) * 4; 
 var _head = dsin(tim * 5) * 1; 
 
@@ -64,6 +65,10 @@ ChangeToIdle();
        
     BaseLeg1Rotate = _move;
     BaseLeg2Rotate = -_move;
+	/*
+	BaseLeg1Pos[1] += _move1; 
+	BaseLeg2Pos[1] += -_move1;
+	*/
     BaseArmRotate  = _arm;
     BaseHeadPos[1] += _head;
 

@@ -1,4 +1,4 @@
-_interected = new Interectedobj(x, y, id,55);
+_interected = new Interectedobj(x, y, id,55,"toilet");
 interacted = 0;
 
 Delay = 2;
