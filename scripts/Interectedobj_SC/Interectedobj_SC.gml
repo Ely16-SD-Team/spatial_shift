@@ -10,15 +10,13 @@ function Interectedobj (_x,_y,ids,dis) constructor {
 	
 	static Draw = function() {
 		var _plpos = Player_O.PlayerGetPos();
-		if (point_distance(_plpos[0],_plpos[1],X,Y) < Dis) {
-			self.frame += 0.1;
+		if (point_distance(_plpos[0],_plpos[1],X,Y) < Dis  && self.Ids.interacted != -1) {
+			self.frame += 0.05;
 			draw_sprite_ext(Button_use_sp,frame,_plpos[0],_plpos[1] - 120,1,1,0,c_white,1)
 			if (keyboard_check_pressed(ord("E"))) {
-		            
-					if (instance_exists(self.Ids) && self.Ids.interacted != -1) {
-		                self.Ids.interacted = 1;
-		            }
-					
+				if (instance_exists(self.Ids)) {
+		            self.Ids.interacted = 1;
+		        }
 		    }
 		} else {
 			self.frame = 0;

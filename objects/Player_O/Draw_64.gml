@@ -1,1 +1,1 @@
-draw_text(10,10,current_state)
+//draw_text(10,10,current_state)
