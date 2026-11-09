@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Ely16","folderPath":"folders/Ely16.yy","name":"Ely16","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Shaders","folderPath":"folders/Ely16/Shaders.yy","name":"Shaders","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Ely16/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Ely16/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Ely16/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -42,6 +43,7 @@
     {"id":{"name":"Data_O","path":"objects/Data_O/Data_O.yy",},},
     {"id":{"name":"PlaceHolder_obj","path":"objects/PlaceHolder_obj/PlaceHolder_obj.yy",},},
     {"id":{"name":"Player_O","path":"objects/Player_O/Player_O.yy",},},
+    {"id":{"name":"TextBox_O","path":"objects/TextBox_O/TextBox_O.yy",},},
     {"id":{"name":"Wall_O","path":"objects/Wall_O/Wall_O.yy",},},
     {"id":{"name":"Bathroom_01_rm","path":"rooms/Bathroom_01_rm/Bathroom_01_rm.yy",},},
     {"id":{"name":"Holl_02_rm","path":"rooms/Holl_02_rm/Holl_02_rm.yy",},},
