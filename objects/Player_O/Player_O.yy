@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"PlayerColide_S",
-    "path":"sprites/PlayerColide_S/PlayerColide_S.yy",
+    "name":"Illustration_sp",
+    "path":"sprites/Illustration_sp/Illustration_sp.yy",
   },
   "spriteMaskId":null,
   "visible":true,
