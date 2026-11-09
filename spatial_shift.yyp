@@ -32,6 +32,7 @@
   "name":"spatial_shift",
   "resources":[
     {"id":{"name":"Jopa","path":"notes/Jopa/Jopa.yy",},},
+    {"id":{"name":"Data_O","path":"objects/Data_O/Data_O.yy",},},
     {"id":{"name":"Player_O","path":"objects/Player_O/Player_O.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Dude_arm_sp","path":"sprites/Dude_arm_sp/Dude_arm_sp.yy",},},

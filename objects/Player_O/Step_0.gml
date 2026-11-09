@@ -48,6 +48,7 @@ case States.PLAYER_WALK:
 
 var _move = dsin(tim * 5) * 10; 
 var _arm = dsin(tim * 5) * 4; 
+var _head = dsin(tim * 5) * 2; 
 
 // Leg
 BaseLeg1Rotate = _move;
@@ -55,6 +56,7 @@ BaseLeg2Rotate = -_move;
 
 // Arm
 BaseArmRotate = _arm;
+BaseHeadPos[1] += _head;
 
 x += _move_dir * MoveSpeed;
 
