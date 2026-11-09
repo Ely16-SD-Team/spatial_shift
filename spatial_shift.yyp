@@ -31,8 +31,6 @@
   },
   "name":"spatial_shift",
   "resources":[
-    {"id":{"name":"Жопа","path":"notes/Жопа/Жопа.yy",},},
-    {"id":{"name":"Jopa_obj","path":"objects/Jopa_obj/Jopa_obj.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "resourceType":"GMProject",
