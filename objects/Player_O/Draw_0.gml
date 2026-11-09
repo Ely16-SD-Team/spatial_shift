@@ -1,3 +1,4 @@
+// draw_self() 
 
 draw_sprite_ext(Dude_leg2_sp,0,BaseLeg2Pos[0],BaseLeg2Pos[1],BaseLeg2Scale[0]   * PlayerDir,BaseLeg2Scale[1],BaseLeg2Rotate,c_white,1)
 

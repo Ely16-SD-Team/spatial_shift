@@ -9,7 +9,9 @@ current_state = States.PLAYER_IDLE;
 
 tim = 0;
 
-BaseScale = [0.9,0.9]
+AnimTest = false;
+
+BaseScale = [image_xscale,image_yscale]
 
 BaseArmPos = [x,y];
 BaseArmScale = [BaseScale[0],BaseScale[1]];
@@ -19,16 +21,19 @@ BaseBodyPos = [x,y];
 BaseBodyScale = [BaseScale[0],BaseScale[1]];
 BaseBodyRotate = 0;
 
-BaseHeadPos = [x,y];
+BaseHeadBord = 2;
+BaseHeadPos = [x,y + BaseHeadBord];
 BaseHeadScale = [BaseScale[0],BaseScale[1]];
 BaseHeadRotate = 0;
 
+var _LegScaleBord = 0.03;
+
 BaseLeg1Pos = [x,y];
-BaseLeg1Scale = [BaseScale[0],BaseScale[1]];
+BaseLeg1Scale = [BaseScale[0] - _LegScaleBord,BaseScale[1] - _LegScaleBord];
 BaseLeg1Rotate = 0;
 
 BaseLeg2Pos = [x,y];
-BaseLeg2Scale = [BaseScale[0],BaseScale[1]];
+BaseLeg2Scale = [BaseScale[0] - _LegScaleBord,BaseScale[1] - _LegScaleBord];
 BaseLeg2Rotate = 0;
 
 MoveSpeed = 4;

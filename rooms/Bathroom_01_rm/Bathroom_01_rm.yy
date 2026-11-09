@@ -9,8 +9,8 @@
     {"name":"inst_7E06FE39","path":"rooms/Bathroom_01_rm/Bathroom_01_rm.yy",},
     {"name":"inst_6B448F11","path":"rooms/Bathroom_01_rm/Bathroom_01_rm.yy",},
     {"name":"inst_33C84CD4","path":"rooms/Bathroom_01_rm/Bathroom_01_rm.yy",},
-    {"name":"inst_54958A88","path":"rooms/Bathroom_01_rm/Bathroom_01_rm.yy",},
     {"name":"inst_4F732EDB","path":"rooms/Bathroom_01_rm/Bathroom_01_rm.yy",},
+    {"name":"inst_54958A88","path":"rooms/Bathroom_01_rm/Bathroom_01_rm.yy",},
   ],
   "isDnd":false,
   "layers":[

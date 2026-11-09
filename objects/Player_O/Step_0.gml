@@ -1,7 +1,7 @@
 function UpdatePos () {
 BaseArmPos = [x,y];
 BaseBodyPos = [x,y];
-BaseHeadPos = [x,y];
+BaseHeadPos = [x,y + BaseHeadBord];
 BaseLeg1Pos = [x,y];
 BaseLeg2Pos = [x,y];
 }
@@ -47,9 +47,14 @@ break;
 
 case States.PLAYER_WALK:
 
-var _move = dsin(tim * 5) * 10; 
+var _move = dsin(tim * 5) * 8; 
 var _arm = dsin(tim * 5) * 4; 
 var _head = dsin(tim * 5) * 1; 
+
+var _dir = point_direction(0, 0, _move_dir, 0);
+var _xadd = lengthdir_x(MoveSpeed, _dir);
+
+if !place_meeting(x + _xadd,y,AllWall_O){
 
 // Leg
 BaseLeg1Rotate = _move;
@@ -57,20 +62,22 @@ BaseLeg2Rotate = -_move;
 
 // Arm
 BaseArmRotate = _arm;
+
+// Head
 BaseHeadPos[1] += _head;
 
-x += _move_dir * MoveSpeed;
+x = x + _xadd; } else { ChangeToIdle () }
 
-if (_move_dir == 0) {
-    BaseLeg1Rotate = 0;
-    BaseLeg2Rotate = 0;
-	BaseArmRotate =  0;
-	BaseHeadPos[1] = y;
-    current_state = States.PLAYER_IDLE;
-}
+if (_move_dir == 0) { ChangeToIdle () }
 
 break;
 
 }
 
+function ChangeToIdle () {
+    BaseLeg1Rotate = 0;
+    BaseLeg2Rotate = 0;
+	BaseArmRotate =  0;
+    current_state = States.PLAYER_IDLE;
+}
 

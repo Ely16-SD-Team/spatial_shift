@@ -9,7 +9,10 @@
     "name":"Object_gp",
     "path":"folders/eternal1man/Object_gp.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"AllWall_O",
+    "path":"objects/AllWall_O/AllWall_O.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
