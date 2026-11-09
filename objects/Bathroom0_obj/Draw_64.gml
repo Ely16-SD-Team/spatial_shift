@@ -1,1 +1,1 @@
-draw_text(30,10,global.CounterKaka)
+//draw_text(30,10,global.CounterKaka)
