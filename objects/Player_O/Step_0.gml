@@ -85,3 +85,9 @@ function ChangeToIdle () {
     current_state = States.PLAYER_IDLE;
 }
 
+function PlayerGetPos () {
+	return [x,y]
+}
+
+
+

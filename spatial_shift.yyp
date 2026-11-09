@@ -44,6 +44,7 @@
     {"id":{"name":"Wall_O","path":"objects/Wall_O/Wall_O.yy",},},
     {"id":{"name":"Bathroom_01_rm","path":"rooms/Bathroom_01_rm/Bathroom_01_rm.yy",},},
     {"id":{"name":"Test","path":"rooms/Test/Test.yy",},},
+    {"id":{"name":"Interectedobj_SC","path":"scripts/Interectedobj_SC/Interectedobj_SC.yy",},},
     {"id":{"name":"Bathroom0_sp","path":"sprites/Bathroom0_sp/Bathroom0_sp.yy",},},
     {"id":{"name":"Bathroom1_sp","path":"sprites/Bathroom1_sp/Bathroom1_sp.yy",},},
     {"id":{"name":"Bathroom2_sp","path":"sprites/Bathroom2_sp/Bathroom2_sp.yy",},},
