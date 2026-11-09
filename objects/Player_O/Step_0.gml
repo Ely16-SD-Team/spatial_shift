@@ -27,12 +27,13 @@ switch(current_state) {
 case States.PLAYER_IDLE:
 
 var _wave = (dsin(tim * 2) + 1) / 2;
-var _scale = 1 + (_wave * 0.05);
+var _scale = BaseScale[0] + (_wave * 0.05);
+var _scale1 = BaseScale[1] + (_wave * 0.05);
 var _headrot = 1 + (_wave * 2);
 
 // breath
 BaseBodyScale[0] = _scale;
-BaseBodyScale[1] = _scale;
+BaseBodyScale[1] = _scale1;
 
 // Head Rot
 BaseHeadRotate = _headrot;
@@ -48,7 +49,7 @@ case States.PLAYER_WALK:
 
 var _move = dsin(tim * 5) * 10; 
 var _arm = dsin(tim * 5) * 4; 
-var _head = dsin(tim * 5) * 2; 
+var _head = dsin(tim * 5) * 1; 
 
 // Leg
 BaseLeg1Rotate = _move;
@@ -64,6 +65,7 @@ if (_move_dir == 0) {
     BaseLeg1Rotate = 0;
     BaseLeg2Rotate = 0;
 	BaseArmRotate =  0;
+	BaseHeadPos[1] = y;
     current_state = States.PLAYER_IDLE;
 }
 
