@@ -16,7 +16,7 @@ function Interectedobj (_x,_y,ids,dis) constructor {
 			if (keyboard_check_pressed(ord("E"))) {
 		            
 					if (instance_exists(self.Ids) && self.Ids.interacted != -1) {
-		                self.Ids.interacted = true;
+		                self.Ids.interacted = 1;
 		            }
 					
 		    }
