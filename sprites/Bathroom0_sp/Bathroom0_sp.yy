@@ -12,14 +12,15 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"00769c39-d484-4292-bc8f-4c3bd5ce82ec","name":"00769c39-d484-4292-bc8f-4c3bd5ce82ec","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ab926f38-57dd-491c-a3cb-4c8c39da920b","name":"ab926f38-57dd-491c-a3cb-4c8c39da920b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a4ef27c7-9bd5-4d4d-81f6-9d497fde1049","name":"a4ef27c7-9bd5-4d4d-81f6-9d497fde1049","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":138,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"fbc6574f-081c-445a-8b95-f0a49958d29d","blendMode":0,"displayName":"default","isLocked":false,"name":"fbc6574f-081c-445a-8b95-f0a49958d29d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"d6e9b9d2-0db3-47ae-9ec9-854307201e13","blendMode":0,"displayName":"default","isLocked":false,"name":"d6e9b9d2-0db3-47ae-9ec9-854307201e13","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Bathroom0_sp",
   "nineSlice":null,
@@ -49,7 +50,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":2.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -69,8 +70,11 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"00769c39-d484-4292-bc8f-4c3bd5ce82ec","path":"sprites/Bathroom0_sp/Bathroom0_sp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"8b7498f8-dfb6-4df2-b6c2-24667012b922","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ab926f38-57dd-491c-a3cb-4c8c39da920b","path":"sprites/Bathroom0_sp/Bathroom0_sp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"017639af-d71e-4189-a26b-656cdc3599fa","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a4ef27c7-9bd5-4d4d-81f6-9d497fde1049","path":"sprites/Bathroom0_sp/Bathroom0_sp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"6dcb3b3d-5208-415f-86ec-7650baf5407a","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
