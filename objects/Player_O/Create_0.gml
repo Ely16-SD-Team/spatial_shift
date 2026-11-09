@@ -9,7 +9,7 @@ current_state = States.PLAYER_IDLE;
 
 tim = 0;
 
-BaseScale = [0.8,0.8]
+BaseScale = [0.9,0.9]
 
 BaseArmPos = [x,y];
 BaseArmScale = [BaseScale[0],BaseScale[1]];
