@@ -1,4 +1,3 @@
-
 enum States {
 	PLAYER_IDLE,
 	PLAYER_WALK,
@@ -36,5 +35,5 @@ BaseLeg2Pos = [x,y];
 BaseLeg2Scale = [BaseScale[0] - _LegScaleBord,BaseScale[1] - _LegScaleBord];
 BaseLeg2Rotate = 0;
 
-MoveSpeed = 4;
+MoveSpeed = 3;
 PlayerDir = 1;

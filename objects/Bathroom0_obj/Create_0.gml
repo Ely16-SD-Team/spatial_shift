@@ -4,3 +4,8 @@ interacted = 0;
 Delay = 2;
 DelayC = 0;
 _dt = 0;
+
+
+
+
+global.CounterKaka = 0

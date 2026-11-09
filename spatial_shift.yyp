@@ -44,6 +44,7 @@
     {"id":{"name":"Player_O","path":"objects/Player_O/Player_O.yy",},},
     {"id":{"name":"Wall_O","path":"objects/Wall_O/Wall_O.yy",},},
     {"id":{"name":"Bathroom_01_rm","path":"rooms/Bathroom_01_rm/Bathroom_01_rm.yy",},},
+    {"id":{"name":"Holl_02_rm","path":"rooms/Holl_02_rm/Holl_02_rm.yy",},},
     {"id":{"name":"Test","path":"rooms/Test/Test.yy",},},
     {"id":{"name":"Interectedobj_SC","path":"scripts/Interectedobj_SC/Interectedobj_SC.yy",},},
     {"id":{"name":"Bathroom0_sp","path":"sprites/Bathroom0_sp/Bathroom0_sp.yy",},},
@@ -51,7 +52,10 @@
     {"id":{"name":"Bathroom2_sp","path":"sprites/Bathroom2_sp/Bathroom2_sp.yy",},},
     {"id":{"name":"Bathroom3_sp","path":"sprites/Bathroom3_sp/Bathroom3_sp.yy",},},
     {"id":{"name":"bg001_sp","path":"sprites/bg001_sp/bg001_sp.yy",},},
+    {"id":{"name":"bg002_1_sp","path":"sprites/bg002_1_sp/bg002_1_sp.yy",},},
+    {"id":{"name":"bg002_sp","path":"sprites/bg002_sp/bg002_sp.yy",},},
     {"id":{"name":"bg01_sp","path":"sprites/bg01_sp/bg01_sp.yy",},},
+    {"id":{"name":"bg02_sp","path":"sprites/bg02_sp/bg02_sp.yy",},},
     {"id":{"name":"Button_use_sp","path":"sprites/Button_use_sp/Button_use_sp.yy",},},
     {"id":{"name":"Dude_arm_sp","path":"sprites/Dude_arm_sp/Dude_arm_sp.yy",},},
     {"id":{"name":"Dude_body_sp","path":"sprites/Dude_body_sp/Dude_body_sp.yy",},},
@@ -68,6 +72,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"Bathroom_01_rm","path":"rooms/Bathroom_01_rm/Bathroom_01_rm.yy",},},
     {"roomId":{"name":"Test","path":"rooms/Test/Test.yy",},},
+    {"roomId":{"name":"Holl_02_rm","path":"rooms/Holl_02_rm/Holl_02_rm.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
