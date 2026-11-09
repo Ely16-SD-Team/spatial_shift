@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"v1",
+  "%Name":"Жопа",
+  "name":"Жопа",
+  "parent":{
+    "name":"Ely16",
+    "path":"folders/Ely16.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}
