@@ -51,22 +51,25 @@ var _move = dsin(tim * 5) * 8;
 var _arm = dsin(tim * 5) * 4; 
 var _head = dsin(tim * 5) * 1; 
 
-var _dir = point_direction(0, 0, _move_dir, 0);
-var _xadd = lengthdir_x(MoveSpeed, _dir);
+var _vx = _move_dir * MoveSpeed;
+if (place_meeting(x + _vx, y, AllWall_O)) {
+        
+    while (!place_meeting(x + sign(_vx), y, AllWall_O)) {
+        x += sign(_vx); 
+}  
 
-if !place_meeting(x + _xadd,y,AllWall_O){
+ChangeToIdle();
 
-// Leg
-BaseLeg1Rotate = _move;
-BaseLeg2Rotate = -_move;
+} else {
+       
+    BaseLeg1Rotate = _move;
+    BaseLeg2Rotate = -_move;
+    BaseArmRotate  = _arm;
+    BaseHeadPos[1] += _head;
 
-// Arm
-BaseArmRotate = _arm;
+    x += _vx; 
+} 
 
-// Head
-BaseHeadPos[1] += _head;
-
-x = x + _xadd; } else { ChangeToIdle () }
 
 if (_move_dir == 0) { ChangeToIdle () }
 
@@ -78,6 +81,7 @@ function ChangeToIdle () {
     BaseLeg1Rotate = 0;
     BaseLeg2Rotate = 0;
 	BaseArmRotate =  0;
+	BaseHeadPos[1] = y + BaseHeadBord;
     current_state = States.PLAYER_IDLE;
 }
 
