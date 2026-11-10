@@ -7,5 +7,6 @@ var _bord0 = 15;
 draw_text_colour((_cam_width/2) - string_width(global.DescriptionText) / 2,_cam_height - _bord - _bord0,global.DescriptionText,c_yellow,c_yellow,c_yellow,c_yellow,1)
 //draw_text_colour((_cam_width/2) - string_width(Text[0]) / 2,_cam_height - _bord,Text[0],c_yellow,c_yellow,c_yellow,c_yellow,1)
 
-
+// Translete
+global.ScreenManager.Draw();
 

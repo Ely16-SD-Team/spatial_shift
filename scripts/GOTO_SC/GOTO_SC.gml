@@ -13,9 +13,20 @@ function GOTO (roomN,SpawnX,SpawnY) constructor {
         var _player_touch = collision_rectangle(other.x, other.y, _x2, _y2, Player_O, false, true);
 
         if (_player_touch != noone) {
-            global.RoomSpawnPos = [X_pos, Y_pos];
-            global.RoomSkip = true;
-            room_goto(RoomN);
-        }
+
+		    if (global.ScreenManager.alpha == 0) {
+		        global.ScreenManager.Trigger("fade_to_black");
+				global.PlayerStop = true;
+		    }
+    
+		    if (global.ScreenManager.alpha >= 1) {
+		        global.RoomSpawnPos = [X_pos, Y_pos];
+		        global.RoomSkip = true;
+		        room_goto(RoomN);
+        
+		        global.ScreenManager.Trigger("fade_to_clear");
+				global.PlayerStop = false;
+		    }
+		}
     }
 }

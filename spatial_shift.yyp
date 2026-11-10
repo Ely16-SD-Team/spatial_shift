@@ -62,6 +62,7 @@
     {"id":{"name":"WTest","path":"rooms/WTest/WTest.yy",},},
     {"id":{"name":"GOTO_SC","path":"scripts/GOTO_SC/GOTO_SC.yy",},},
     {"id":{"name":"Interectedobj_SC","path":"scripts/Interectedobj_SC/Interectedobj_SC.yy",},},
+    {"id":{"name":"Transleet_SC","path":"scripts/Transleet_SC/Transleet_SC.yy",},},
     {"id":{"name":"Bathroom0_sp","path":"sprites/Bathroom0_sp/Bathroom0_sp.yy",},},
     {"id":{"name":"Bathroom1_sp","path":"sprites/Bathroom1_sp/Bathroom1_sp.yy",},},
     {"id":{"name":"Bathroom2_sp","path":"sprites/Bathroom2_sp/Bathroom2_sp.yy",},},

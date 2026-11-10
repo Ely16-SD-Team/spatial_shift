@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Transleet_SC",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Transleet_SC",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Ely16/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
