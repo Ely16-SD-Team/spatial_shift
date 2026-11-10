@@ -80,6 +80,7 @@
     {"id":{"name":"Dude_leg2_sp","path":"sprites/Dude_leg2_sp/Dude_leg2_sp.yy",},},
     {"id":{"name":"Illustration_sp","path":"sprites/Illustration_sp/Illustration_sp.yy",},},
     {"id":{"name":"PlayerColide_S","path":"sprites/PlayerColide_S/PlayerColide_S.yy",},},
+    {"id":{"name":"PlayerStable_sp","path":"sprites/PlayerStable_sp/PlayerStable_sp.yy",},},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
     {"id":{"name":"Wall_S","path":"sprites/Wall_S/Wall_S.yy",},},
   ],
