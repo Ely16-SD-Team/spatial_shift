@@ -34,3 +34,12 @@ var final_angle = shake * shake_intensity;
 
 global.DescriptionText = "";
 global.ActiveInteractID = noone; 
+
+// goto
+if (global.RoomSkip == true) {
+	if instance_exists(Player_O) {
+		Player_O.x = global.RoomSpawnPos[0]
+		Player_O.y = global.RoomSpawnPos[1]
+		global.RoomSkip = false
+	}
+}
