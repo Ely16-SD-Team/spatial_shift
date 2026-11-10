@@ -1,4 +1,4 @@
-function Interectedobj (_x,_y,ids,dis,descriotion) constructor {
+function Interectedobj (_x,_y,ids,dis = 55,descriotion = "...",isDesc = false) constructor {
 	ids_List = [];
 	x_List = [];
 	y_List = [];
@@ -8,6 +8,7 @@ function Interectedobj (_x,_y,ids,dis,descriotion) constructor {
 	frame = 0;
 	Dis = dis;
 	Desc = descriotion;
+	Isdesc = isDesc;
 	
 	static Draw = function() {
 		var _plpos = Player_O.PlayerGetPos();
@@ -15,12 +16,16 @@ function Interectedobj (_x,_y,ids,dis,descriotion) constructor {
 		
 		if (_dist < Dis && self.Ids.interacted != -1) {
 			
-			if (global.ActiveInteractID == noone || _dist < point_distance(_plpos[0], _plpos[1], global.ActiveInteractID.x, global.ActiveInteractID.y)) {
-				
-				global.ActiveInteractID = self.Ids; 
-				global.DescriptionText = Desc;
+			if (Isdesc == false) {
+			    if (global.ActiveInteractID == noone || _dist < point_distance(_plpos[0], _plpos[1], global.ActiveInteractID.x, global.ActiveInteractID.y)) {
+			        global.ActiveInteractID = self.Ids; 
+			        global.DescriptionText = Desc; 
+			    }
+			} 
+			else {
+			    global.DescriptionText = Desc; 
 			}
-			
+				
 			if (global.ActiveInteractID == self.Ids) {
 				self.frame += 0.05;
 				draw_sprite_ext(Button_use_sp, frame, _plpos[0], _plpos[1] - 120, 1, 1, 0, c_white, 1);

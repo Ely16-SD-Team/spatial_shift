@@ -12,6 +12,7 @@
     {"name":"inst_4F732EDB","path":"rooms/Bathroom_01_rm/Bathroom_01_rm.yy",},
     {"name":"inst_54958A88","path":"rooms/Bathroom_01_rm/Bathroom_01_rm.yy",},
     {"name":"inst_1328E6EC","path":"rooms/Bathroom_01_rm/Bathroom_01_rm.yy",},
+    {"name":"inst_1AE2994A","path":"rooms/Bathroom_01_rm/Bathroom_01_rm.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -27,6 +28,7 @@
         {"$GMRInstance":"v4","%Name":"inst_54958A88","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_54958A88","objectId":{"name":"Bathroom2_obj","path":"objects/Bathroom2_obj/Bathroom2_obj.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":90.0,"y":304.0,},
         {"$GMRInstance":"v4","%Name":"inst_4F732EDB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4F732EDB","objectId":{"name":"Bathroom3_obj","path":"objects/Bathroom3_obj/Bathroom3_obj.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":425.0,"y":333.0,},
         {"$GMRInstance":"v4","%Name":"inst_1328E6EC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1328E6EC","objectId":{"name":"Data_O","path":"objects/Data_O/Data_O.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-32.0,"y":0.0,},
+        {"$GMRInstance":"v4","%Name":"inst_1AE2994A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1AE2994A","objectId":{"name":"closet_O","path":"objects/closet_O/closet_O.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":525.0,"y":267.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"BG","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_62169104","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_62169104","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"bg01_sp","path":"sprites/bg01_sp/bg01_sp.yy",},"x":0.0,"y":0.0,},
