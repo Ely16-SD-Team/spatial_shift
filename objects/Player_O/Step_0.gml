@@ -1,5 +1,5 @@
 function UpdatePos () {
-BaseArmPos = [x,y];
+BaseArmPos = [x - (25 * PlayerDir), y - 28];
 BaseBodyPos = [x,y];
 BaseHeadPos = [x,y + BaseHeadBord];
 BaseLeg1Pos = [x,y];
@@ -72,7 +72,7 @@ ChangeToIdle();
     BaseArmRotate  = _arm;
     BaseHeadPos[1] += _head;
 
-    x += _vx; 
+   x += _vx; 
 } 
 
 
