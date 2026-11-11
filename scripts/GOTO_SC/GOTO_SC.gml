@@ -3,14 +3,10 @@ function GOTO (roomN,SpawnX,SpawnY) constructor {
     X_pos = SpawnX;
     Y_pos = SpawnY;
 	
-    static Update = function() {
-        var _sw = sprite_get_width(other.sprite_index);
-        var _sh = sprite_get_height(other.sprite_index);
-        
-        var _x2 = other.x + (_sw * other.image_xscale);
-        var _y2 = other.y + (_sh * other.image_yscale);
+    static Update = function(_inst) {
+         if (!instance_exists(_inst)) return;
 
-        var _player_touch = collision_rectangle(other.x, other.y, _x2, _y2, Player_O, false, true);
+        var _player_touch = collision_rectangle(_inst.bbox_left, _inst.bbox_top, _inst.bbox_right, _inst.bbox_bottom, Player_O, false, true);
 
         if (_player_touch != noone) {
 
@@ -20,7 +16,9 @@ function GOTO (roomN,SpawnX,SpawnY) constructor {
 		    }
     
 		    if (global.ScreenManager.alpha >= 1) {
-		        global.RoomSpawnPos = [X_pos, Y_pos];
+		        if (Player_O.PlayerGetPos()[0] < X_pos) { global.RoomSpawnDir = -1; } else { global.RoomSpawnDir = 1; }
+				
+				global.RoomSpawnPos = [X_pos, Y_pos];
 		        global.RoomSkip = true;
 		        room_goto(RoomN);
         

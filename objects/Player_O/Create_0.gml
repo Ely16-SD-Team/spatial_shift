@@ -37,3 +37,13 @@ BaseLeg2Rotate = 0;
 
 MoveSpeed = 3;
 PlayerDir = 1;
+
+function PlayerGetPos () {
+	return [x,y]
+}
+
+function PlayerSetPos (_x,_y,Dir) {
+x = _x;
+y = _y;
+PlayerDir = Dir;
+}

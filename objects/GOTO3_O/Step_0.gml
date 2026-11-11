@@ -1,1 +1,1 @@
-Triger.Update()
+Triger.Update(self)

@@ -9,6 +9,8 @@
     {"name":"inst_7E06FE39_2","path":"rooms/Bedsrum_03_rm/Bedsrum_03_rm.yy",},
     {"name":"inst_1EF54BD8","path":"rooms/Bedsrum_03_rm/Bedsrum_03_rm.yy",},
     {"name":"inst_2D242BEE","path":"rooms/Bedsrum_03_rm/Bedsrum_03_rm.yy",},
+    {"name":"inst_19175398","path":"rooms/Bedsrum_03_rm/Bedsrum_03_rm.yy",},
+    {"name":"inst_4EC701BD","path":"rooms/Bedsrum_03_rm/Bedsrum_03_rm.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -22,6 +24,8 @@
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_1EF54BD8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1EF54BD8","objectId":{"name":"Wall_O","path":"objects/Wall_O/Wall_O.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":5.203125,"x":96.0,"y":64.0,},
         {"$GMRInstance":"v4","%Name":"inst_2D242BEE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2D242BEE","objectId":{"name":"poster2_O","path":"objects/poster2_O/poster2_O.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":438.0,"y":189.0,},
+        {"$GMRInstance":"v4","%Name":"inst_19175398","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_19175398","objectId":{"name":"Wall_O","path":"objects/Wall_O/Wall_O.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.265625,"scaleY":5.203125,"x":722.0,"y":66.0,},
+        {"$GMRInstance":"v4","%Name":"inst_4EC701BD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4EC701BD","objectId":{"name":"GOTO4_O","path":"objects/GOTO4_O/GOTO4_O.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.265625,"scaleY":5.1875,"x":704.0,"y":67.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"BG","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_2DB6D3B2","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_2DB6D3B2","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"bg03_sp","path":"sprites/bg03_sp/bg03_sp.yy",},"x":0.0,"y":0.0,},

@@ -38,8 +38,10 @@ global.ActiveInteractID = noone;
 // goto
 if (global.RoomSkip == true) {
 	if instance_exists(Player_O) {
-		Player_O.x = global.RoomSpawnPos[0]
-		Player_O.y = global.RoomSpawnPos[1]
+		var _x = global.RoomSpawnPos[0];
+		var _y = global.RoomSpawnPos[1];
+		var _dir = global.RoomSpawnDir;
+		Player_O.PlayerSetPos(_x,_y,_dir);
 		global.RoomSkip = false
 	}
 }

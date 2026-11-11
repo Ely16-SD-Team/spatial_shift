@@ -90,10 +90,6 @@ function ChangeToIdle () {
     current_state = States.PLAYER_IDLE;
 }
 
-function PlayerGetPos () {
-	return [x,y]
-}
-
 if (global.PlayerStop = true) { current_state = States.PLAYER_IDLE; }
 
 
