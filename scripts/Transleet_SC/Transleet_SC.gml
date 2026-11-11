@@ -2,7 +2,6 @@ function Transleet(mode, Speed) constructor {
     _Mode = mode; 
     _Speed = Speed;
     alpha = 0;
-    
     static Trigger = function(new_mode) {
         if (new_mode == "fade_to_black") { _Mode = 1; alpha = 0; }
         if (new_mode == "fade_to_clear") { _Mode = 2; alpha = 1; }

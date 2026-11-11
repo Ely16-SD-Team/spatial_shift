@@ -35,7 +35,7 @@ BaseLeg2Pos = [x,y];
 BaseLeg2Scale = [BaseScale[0] - _LegScaleBord,BaseScale[1] - _LegScaleBord];
 BaseLeg2Rotate = 0;
 
-MoveSpeed = 3;
+MoveSpeed = 2;
 PlayerDir = 1;
 
 function PlayerGetPos () {
