@@ -10,3 +10,6 @@ global.RoomSpawnDir = 0;
 global.RoomSkip = false;
 
 global.PlayerStop = false;
+
+
+global.Catarsis = 0
