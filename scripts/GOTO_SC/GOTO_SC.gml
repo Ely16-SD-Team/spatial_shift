@@ -1,7 +1,8 @@
-function GOTO (roomN,SpawnX,SpawnY) constructor {
+function GOTO (roomN,SpawnX,SpawnY,sound = -1) constructor {
     RoomN = roomN;
     X_pos = SpawnX;
     Y_pos = SpawnY;
+	SN = sound;
 	
     static Update = function(_inst) {
          if (!instance_exists(_inst)) return;
@@ -12,6 +13,7 @@ function GOTO (roomN,SpawnX,SpawnY) constructor {
 
 		    if (global.ScreenManager.alpha == 0) {
 		        global.ScreenManager.Trigger("fade_to_black");
+				if (SN != -1) { audio_play_sound(SN,0,0) }
 				global.PlayerStop = true;
 		    }
     

@@ -3,7 +3,7 @@ _dt = min(0.1, delta_time / 1000000);
 if (interacted == 1 && DelayC <= 0) {
 	DelayC = Delay;
 	interacted = -1;
-	// SOUND смыв унитаза
+	audio_play_sound(toilet_SN,0,0)
 	global.CounterKaka ++
 }
 

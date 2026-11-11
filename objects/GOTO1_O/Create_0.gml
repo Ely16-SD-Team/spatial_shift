@@ -1,1 +1,1 @@
-Triger = new GOTO(Holl_02_rm,256,269);
+Triger = new GOTO(Holl_02_rm,256,269,door_SN);

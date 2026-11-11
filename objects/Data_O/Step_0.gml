@@ -45,3 +45,7 @@ if (global.RoomSkip == true) {
 		global.RoomSkip = false
 	}
 }
+
+// Audion
+audio_set_master_gain(0,global.SoundVolume);
+
