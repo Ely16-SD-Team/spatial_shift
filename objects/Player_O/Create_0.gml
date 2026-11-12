@@ -5,8 +5,9 @@ enum States {
 	PLAYER_SHOOT_IDLE,
 	PLAYER_SHOOT_WALK
 }
-
+if (global.PlayerGun == 0) {
 current_state = States.PLAYER_IDLE;
+} else { current_state = States.PLAYER_SHOOT_IDLE; }
 
 tim = 0;
 
@@ -62,4 +63,6 @@ StepSound = Step_SN;
 function PlayerSetSound (Sn) {
 	StepSound = Sn;
 }
+
+FinalyRot = 0;
 
