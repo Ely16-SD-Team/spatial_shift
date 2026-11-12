@@ -1,7 +1,5 @@
-
-
 tim ++;
-var _dt = delta_time / 1000000;
+var _dt = (delta_time / 1000000)
 
 if keyboard_check_pressed(vk_right) {
 	if (room_next(room) != -1) { room_goto_next() } 
@@ -13,7 +11,7 @@ if (instance_exists(Player_O)) {
 
 PrevCamX = camera_get_view_x(view_camera[0]);
 	
-var CamW = camera_get_view_width(view_camera[0])	
+var CamW = camera_get_view_width(view_camera[0])
 var finel = clamp(Player_O.x - CamW / 2,0,room_width - CamW)
 
 camera_set_view_pos(view_camera[0], finel ,camera_get_view_y(view_camera[0]))
@@ -49,24 +47,22 @@ if (global.RoomSkip == true) {
 }
 
 // Audion
-audio_set_master_gain(0,global.SoundVolume);
+audio_set_master_gain(0,global.SoundVolume)
 
-if keyboard_check(vk_enter) { Camera_Shake(19); }
-
+// 8===D 8===D 8===D
 var isc1 = RoomCatarsis_new_01_rm 
 var isc2 = Bedsrum_new_03_rm
+var isc3 = Bathroom_new_01_rm
 
 
-if (global.Catarsis == 1) && (room != isc1 && room != isc2) {
-noise_timer -= _dt;
-
-if (noise_timer <= 0) {
-    Noise_st();
-    noise_timer = random_range(2, 5); 
+if (global.Catarsis == 1) && !(room == isc1 && room == isc2 && room == isc3) {
+	noise_timer -= _dt;
+	if (noise_timer <= 0) {
+	    Noise_st();
+	    noise_timer = random_range(2, 5); 
+	}
 }
-
-}
-
+// 8==============================================D
 if (global.PostAnim == 1) { instance_create_depth(0,0,0,PostCatarsis_O) global.PostAnim =0 }
 
-Camera_Shake_Update();
+Camera_Shake_Update()
