@@ -23,5 +23,5 @@ global.PostAnim = 0;
 
 noise_timer = random_range(2, 5);
 
-
+global.ReserchMask = false
 

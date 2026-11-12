@@ -51,7 +51,11 @@ audio_set_master_gain(0,global.SoundVolume);
 
 if keyboard_check(vk_enter) { Camera_Shake(19); }
 
-if (global.Catarsis == 1 && room != RoomCatarsis_new_01_rm) {
+var isc1 = RoomCatarsis_new_01_rm 
+var isc2 = Bedsrum_new_03_rm
+
+
+if (global.Catarsis == 1) && (room != isc1 && room != isc2) {
 noise_timer -= _dt;
 
 if (noise_timer <= 0) {

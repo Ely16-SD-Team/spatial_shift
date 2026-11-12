@@ -5,6 +5,6 @@ if (global.Catarsis == 0){
 	_interected = new Interectedobj(x, y, id,95,"Marker");
 	interacted = 0;
 }
-
-
+anim = 0
+timer = 0
 
