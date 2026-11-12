@@ -8,3 +8,4 @@ if (global.Catarsis == 0){
 anim = 0
 timer = 0
 
+global.BlockMarker = 0
