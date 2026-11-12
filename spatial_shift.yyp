@@ -92,6 +92,7 @@
     {"id":{"name":"boom_SN","path":"sounds/boom_SN/boom_SN.yy",},},
     {"id":{"name":"door_SN","path":"sounds/door_SN/door_SN.yy",},},
     {"id":{"name":"rain_SN","path":"sounds/rain_SN/rain_SN.yy",},},
+    {"id":{"name":"Shh_SN","path":"sounds/Shh_SN/Shh_SN.yy",},},
     {"id":{"name":"Step_SN","path":"sounds/Step_SN/Step_SN.yy",},},
     {"id":{"name":"toilet_SN","path":"sounds/toilet_SN/toilet_SN.yy",},},
     {"id":{"name":"Bathroom0_sp","path":"sprites/Bathroom0_sp/Bathroom0_sp.yy",},},
