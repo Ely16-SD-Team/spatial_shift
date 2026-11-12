@@ -27,8 +27,8 @@
     {"$GMFolder":"","%Name":"Tyle_gp","folderPath":"folders/eternal1man_gp/Tyle_gp.yy","name":"Tyle_gp","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Font_gp","folderPath":"folders/Font_gp.yy","name":"Font_gp","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Font","folderPath":"folders/Font.yy","name":"Font","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Room_new_Catarsis_gp","folderPath":"folders/Room_new_Catarsis_gp.yy","name":"Room_new_Catarsis_gp","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Room_do_Catarsis_gp","folderPath":"folders/Room_do_Catarsis_gp.yy","name":"Room_do_Catarsis_gp","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Room_new_Catarsis_gp","folderPath":"folders/Room_new_Catarsis_gp.yy","name":"Room_new_Catarsis_gp","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sound","folderPath":"folders/Sound.yy","name":"Sound","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[

@@ -19,6 +19,8 @@ global.PlayerStop = false;
 global.Catarsis = 0;
 global.PostAnim = 0;
 
+global.PlayerGun = 0;
+
 noise_timer = random_range(2, 5);
 
 
