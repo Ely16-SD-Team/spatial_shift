@@ -76,6 +76,7 @@
     {"id":{"name":"GOTO_SC","path":"scripts/GOTO_SC/GOTO_SC.yy",},},
     {"id":{"name":"Interectedobj_SC","path":"scripts/Interectedobj_SC/Interectedobj_SC.yy",},},
     {"id":{"name":"Noise_st","path":"scripts/Noise_st/Noise_st.yy",},},
+    {"id":{"name":"Shake_SC","path":"scripts/Shake_SC/Shake_SC.yy",},},
     {"id":{"name":"Transleet_SC","path":"scripts/Transleet_SC/Transleet_SC.yy",},},
     {"id":{"name":"boom_SN","path":"sounds/boom_SN/boom_SN.yy",},},
     {"id":{"name":"door_SN","path":"sounds/door_SN/door_SN.yy",},},

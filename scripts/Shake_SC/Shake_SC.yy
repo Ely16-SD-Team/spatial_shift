@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Shake_SC",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Shake_SC",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Ely16/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

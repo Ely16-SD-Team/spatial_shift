@@ -10,6 +10,7 @@ if ((_dur > 0 && _pos >= _dur - 0.05) || _status == video_status_closed) {
 	global.RoomSpawnPos = [320,256]
 	global.PlayerStop = false;
 	global.RoomSpawnDir = -1;
+	global.Catarsis = 1;
 }
 
 if (timer < 1) {
