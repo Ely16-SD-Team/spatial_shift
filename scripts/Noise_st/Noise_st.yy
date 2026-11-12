@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Noise_st",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Noise_st",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/eternal1man/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
