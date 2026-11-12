@@ -93,5 +93,3 @@ function ChangeToIdle () {
 
 if (global.PlayerStop = true) { current_state = States.PLAYER_IDLE; }
 
-
-
