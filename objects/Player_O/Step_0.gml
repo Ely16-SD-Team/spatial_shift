@@ -47,7 +47,9 @@ break;
 
 case States.PLAYER_WALK:
 
-var _move = dsin(tim * 5) * 8; 
+var _F = MoveSpeed * 2;
+
+var _move = dsin(tim * 5) * _F; 
 var _move1 = dsin(tim * 5) * 1;
 var _arm = dsin(tim * 5) * 4; 
 var _head = dsin(tim * 5) * 1; 
@@ -64,7 +66,7 @@ ChangeToIdle();
 } else {
        
     BaseLeg1Rotate = _move;
-	if (_move == 8 || _move = -8) { audio_play_sound(StepSound,0,0) } 
+	if (_move == _F || _move = -_F) { audio_play_sound(StepSound,0,0) } 
     BaseLeg2Rotate = -_move;
 	/*
 	BaseLeg1Pos[1] += _move1; 
@@ -91,4 +93,10 @@ function ChangeToIdle () {
     current_state = States.PLAYER_IDLE;
 }
 if (global.PlayerStop = true) { current_state = States.PLAYER_IDLE; }
+
+if (global.ReserchMask == false){
+MoveSpeed = 2
+}else {
+MoveSpeed = 3
+}
 
