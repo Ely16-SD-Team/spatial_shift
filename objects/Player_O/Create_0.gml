@@ -35,11 +35,9 @@ BaseLeg2Pos = [x,y];
 BaseLeg2Scale = [BaseScale[0] - _LegScaleBord,BaseScale[1] - _LegScaleBord];
 BaseLeg2Rotate = 0;
 
-if (global.ReserchMask == false){
 MoveSpeed = 2
-}else {
-MoveSpeed = 3
-}
+
+
 
 PlayerDir = 1;
 

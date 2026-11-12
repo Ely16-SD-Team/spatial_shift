@@ -15,6 +15,7 @@ if (global.BlockMarker == 0){
 			Player_O.x = 362
 			global.ReserchMask = true
 			global.BlockMarker = 1
+			_interected = new Interectedobj(x, y, id,95,"...",true);
 		}
 	}
 }
