@@ -37,8 +37,8 @@
   ],
   "name":"Bathroom_new_01_rm",
   "parent":{
-    "name":"spatial_shift",
-    "path":"spatial_shift.yyp",
+    "name":"Room_new_Catarsis_gp",
+    "path":"folders/Room_new_Catarsis_gp.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

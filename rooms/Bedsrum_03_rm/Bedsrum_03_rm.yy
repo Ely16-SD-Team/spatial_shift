@@ -36,8 +36,8 @@
   ],
   "name":"Bedsrum_03_rm",
   "parent":{
-    "name":"Room_do_Catarsis",
-    "path":"folders/Room_do_Catarsis.yy",
+    "name":"Room_do_Catarsis_gp",
+    "path":"folders/Room_do_Catarsis_gp.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

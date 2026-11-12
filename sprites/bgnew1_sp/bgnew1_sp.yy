@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"BG_gp",
-    "path":"folders/eternal1man/Sprites_gp/BG_gp.yy",
+    "path":"folders/eternal1man_gp/Sprites_gp/BG_gp.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

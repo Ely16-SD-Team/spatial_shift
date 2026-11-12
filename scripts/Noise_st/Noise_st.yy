@@ -6,7 +6,7 @@
   "name":"Noise_st",
   "parent":{
     "name":"Scripts",
-    "path":"folders/eternal1man/Scripts.yy",
+    "path":"folders/eternal1man_gp/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

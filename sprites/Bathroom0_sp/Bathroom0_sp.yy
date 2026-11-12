@@ -27,7 +27,7 @@
   "origin":4,
   "parent":{
     "name":"furnitura_gp",
-    "path":"folders/eternal1man/Sprites_gp/furnitura_gp.yy",
+    "path":"folders/eternal1man_gp/Sprites_gp/furnitura_gp.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Object_gp",
-    "path":"folders/eternal1man/Object_gp.yy",
+    "path":"folders/eternal1man_gp/Object_gp.yy",
   },
   "parentObjectId":null,
   "persistent":false,
