@@ -1,0 +1,1 @@
+Triger = new GOTO(Holl_new_02_rm,1506,269);

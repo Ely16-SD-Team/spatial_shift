@@ -1,0 +1,1 @@
+Triger = new GOTO(RoomCatarsis_new_01_rm,103,256);

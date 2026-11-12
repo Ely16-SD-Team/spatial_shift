@@ -1,0 +1,2 @@
+
+Triger.Update(self)
