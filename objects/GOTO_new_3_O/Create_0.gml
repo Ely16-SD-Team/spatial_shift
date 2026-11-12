@@ -1,0 +1,1 @@
+Triger = new GOTO(Bedsrum_new_03_rm,568,280);

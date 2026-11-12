@@ -9,8 +9,8 @@
   "name":"GOTO1_O",
   "overriddenProperties":[],
   "parent":{
-    "name":"GOTO O",
-    "path":"folders/Ely16/Objects/GOTO O.yy",
+    "name":"OLD_gp",
+    "path":"folders/Ely16/Objects/GOTO O/OLD_gp.yy",
   },
   "parentObjectId":null,
   "persistent":false,
