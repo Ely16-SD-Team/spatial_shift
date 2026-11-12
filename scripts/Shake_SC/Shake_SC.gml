@@ -23,8 +23,8 @@ function Camera_Shake_Update() {
         var _cam_w = camera_get_view_width(_cam);
         var _cam_h = camera_get_view_height(_cam);
         
-        var _final_x = clamp(_base_x + _state.off_x, -200, max(-200, room_width - _cam_w + 200));
-        var _final_y = clamp(_base_y + _state.off_y, -200, max(-200, room_height - _cam_h + 200));
+        var _final_x = clamp(_base_x + _state.off_x, -400, max(-400, room_width - _cam_w + 200));
+        var _final_y = clamp(_base_y + _state.off_y, -400, max(-400, room_height - _cam_h + 200));
         
 
         _state.off_x = _final_x - _base_x;

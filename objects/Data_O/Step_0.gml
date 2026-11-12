@@ -49,7 +49,7 @@ if (global.RoomSkip == true) {
 // Audion
 audio_set_master_gain(0,global.SoundVolume);
 
-if keyboard_check(vk_enter) { Camera_Shake(15); }
+if keyboard_check(vk_enter) { Camera_Shake(19); }
 
 if (global.Catarsis == 1 && global.PostAnim == 0) {
 noise_timer -= _dt;
@@ -61,6 +61,6 @@ if (noise_timer <= 0) {
 
 }
 
-if (global.PostAnim == 1) { instance_create_depth(0,0,0,PostCatarsis_O) }
+if (global.PostAnim == 1) { instance_create_depth(0,0,0,PostCatarsis_O) global.PostAnim =0 }
 
 Camera_Shake_Update();
