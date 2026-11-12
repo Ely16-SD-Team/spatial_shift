@@ -39,8 +39,8 @@
   ],
   "name":"Bathroom_new_04_rm",
   "parent":{
-    "name":"Room_do_Catarsis",
-    "path":"folders/Room_do_Catarsis.yy",
+    "name":"spatial_shift",
+    "path":"spatial_shift.yyp",
   },
   "parentRoom":null,
   "physicsSettings":{
