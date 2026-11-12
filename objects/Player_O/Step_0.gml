@@ -64,7 +64,7 @@ ChangeToIdle();
 } else {
        
     BaseLeg1Rotate = _move;
-	if (_move == 8 || _move = -8) { audio_play_sound(Step_SN,0,0) } 
+	if (_move == 8 || _move = -8) { audio_play_sound(StepSound,0,0) } 
     BaseLeg2Rotate = -_move;
 	/*
 	BaseLeg1Pos[1] += _move1; 

@@ -64,5 +64,3 @@ if (noise_timer <= 0) {
 if (global.PostAnim == 1) { instance_create_depth(0,0,0,PostCatarsis_O) global.PostAnim =0 }
 
 Camera_Shake_Update();
-
-Player_O.PlayerSetSound(Step_SN)

@@ -35,5 +35,5 @@
     "path":"sprites/AltStep_S/AltStep_S.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
