@@ -1,3 +1,5 @@
+draw_text(10,10,"играть на ентер ураааа игры")
+
 var _cam_height = camera_get_view_height(view_camera[0]);
 var _cam_width = camera_get_view_width(view_camera[0]);
 

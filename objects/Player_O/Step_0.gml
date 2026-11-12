@@ -90,6 +90,5 @@ function ChangeToIdle () {
 	BaseHeadPos[1] = y + BaseHeadBord;
     current_state = States.PLAYER_IDLE;
 }
-
 if (global.PlayerStop = true) { current_state = States.PLAYER_IDLE; }
 
