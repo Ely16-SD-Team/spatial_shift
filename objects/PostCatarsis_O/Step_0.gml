@@ -5,12 +5,11 @@ if (Anim == 1) {
     global.PlayerStop = true;
         timer0 += _dt;
         shake = lerp(shake,0,0.01)
+		Camera_Shake(shake);
 		if (timer0 > 8) {
             Anim = 0;
         }
 }
-
-if keyboard_check_pressed(vk_enter) { Camera_Shake(19); }
 
 if (Anim == 0) {
     global.PlayerStop = false;
