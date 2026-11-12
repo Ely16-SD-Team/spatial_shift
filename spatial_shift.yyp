@@ -30,7 +30,10 @@
     {"$GMFolder":"","%Name":"Room_do_Catarsis","folderPath":"folders/Room_do_Catarsis.yy","name":"Room_do_Catarsis","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sound","folderPath":"folders/Sound.yy","name":"Sound","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "ForcedPrefabProjectReferences":[],
+  "ForcedPrefabProjectReferences":[
+    {"link":"io.gamemaker.gm_filter_distort-1.0.0","name":"io.gamemaker.gm_filter_distort-1.0.0","path":"io.gamemaker.gm_filter_distort-1.0.0.yyp",},
+    {"link":"io.gamemaker.gm_filter_heathaze-1.0.0","name":"io.gamemaker.gm_filter_heathaze-1.0.0","path":"io.gamemaker.gm_filter_heathaze-1.0.0.yyp",},
+  ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"Catarsis360.mp4","CopyToMask":-1,"filePath":"datafiles","name":"Catarsis360.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
