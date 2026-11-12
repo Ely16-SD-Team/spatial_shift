@@ -63,6 +63,7 @@
     {"id":{"name":"Noise_obj","path":"objects/Noise_obj/Noise_obj.yy",},},
     {"id":{"name":"PlaceHolder_obj","path":"objects/PlaceHolder_obj/PlaceHolder_obj.yy",},},
     {"id":{"name":"Player_O","path":"objects/Player_O/Player_O.yy",},},
+    {"id":{"name":"PostCatarsis_O","path":"objects/PostCatarsis_O/PostCatarsis_O.yy",},},
     {"id":{"name":"poster0_O","path":"objects/poster0_O/poster0_O.yy",},},
     {"id":{"name":"poster1_O","path":"objects/poster1_O/poster1_O.yy",},},
     {"id":{"name":"poster2_O","path":"objects/poster2_O/poster2_O.yy",},},

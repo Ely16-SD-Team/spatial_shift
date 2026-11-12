@@ -1,0 +1,1 @@
+draw_sprite(PlayerStable_sp,0,320,260)

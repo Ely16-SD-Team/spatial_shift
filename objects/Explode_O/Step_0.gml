@@ -6,11 +6,8 @@ var _status = video_get_status();
 if ((_dur > 0 && _pos >= _dur - 0.05) || _status == video_status_closed) {
     video_close(); 
     room_goto(RoomCatarsis_new_01_rm);
-	global.RoomSkip = 1;
-	global.RoomSpawnPos = [320,256]
-	global.PlayerStop = false;
-	global.RoomSpawnDir = -1;
 	global.Catarsis = 1;
+	global.PostAnim = 1;
 }
 
 if (timer < 1) {

@@ -51,7 +51,7 @@ audio_set_master_gain(0,global.SoundVolume);
 
 if keyboard_check(vk_enter) { Camera_Shake(15); }
 
-if (global.Catarsis == 1) {
+if (global.Catarsis == 1 && global.PostAnim == 0) {
 noise_timer -= _dt;
 
 if (noise_timer <= 0) {
@@ -60,5 +60,7 @@ if (noise_timer <= 0) {
 }
 
 }
+
+if (global.PostAnim == 1) { instance_create_depth(0,0,0,PostCatarsis_O) }
 
 Camera_Shake_Update();
