@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"marker_SN",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":3.0,
+  "exportDir":"",
+  "name":"marker_SN",
+  "parent":{
+    "name":"Sound",
+    "path":"folders/Sound.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"marker_SN.mp3",
+  "volume":1.0,
+}

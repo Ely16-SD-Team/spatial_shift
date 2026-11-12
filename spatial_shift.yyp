@@ -96,6 +96,7 @@
     {"id":{"name":"Transleet_SC","path":"scripts/Transleet_SC/Transleet_SC.yy",},},
     {"id":{"name":"boom_SN","path":"sounds/boom_SN/boom_SN.yy",},},
     {"id":{"name":"door_SN","path":"sounds/door_SN/door_SN.yy",},},
+    {"id":{"name":"marker_SN","path":"sounds/marker_SN/marker_SN.yy",},},
     {"id":{"name":"rain_SN","path":"sounds/rain_SN/rain_SN.yy",},},
     {"id":{"name":"Shh_SN","path":"sounds/Shh_SN/Shh_SN.yy",},},
     {"id":{"name":"step_2_SN","path":"sounds/step_2_SN/step_2_SN.yy",},},
