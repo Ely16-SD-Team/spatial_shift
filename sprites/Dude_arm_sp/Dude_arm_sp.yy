@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"Dude_arm_sp",
   "bboxMode":0,
-  "bbox_bottom":157,
+  "bbox_bottom":171,
   "bbox_left":96,
   "bbox_right":129,
   "bbox_top":78,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"38d3bd97-f84d-4670-8185-cddb4342086a","name":"38d3bd97-f84d-4670-8185-cddb4342086a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3cc72c2d-e5d5-41fa-8a49-4f6c0fd506f6","name":"3cc72c2d-e5d5-41fa-8a49-4f6c0fd506f6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":236,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"e79b0a98-9841-4301-a919-9699c799e978","blendMode":0,"displayName":"default","isLocked":false,"name":"e79b0a98-9841-4301-a919-9699c799e978","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"872502e7-c27b-4aa6-81b3-daef7a8354ef","blendMode":0,"displayName":"default","isLocked":false,"name":"872502e7-c27b-4aa6-81b3-daef7a8354ef","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"Dude_arm_sp",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"38d3bd97-f84d-4670-8185-cddb4342086a","path":"sprites/Dude_arm_sp/Dude_arm_sp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5009a1a1-4575-4b56-8644-019da9f5a4cd","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3cc72c2d-e5d5-41fa-8a49-4f6c0fd506f6","path":"sprites/Dude_arm_sp/Dude_arm_sp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"4d598ab8-1b81-4ff8-8e87-fbd76b2caf56","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
