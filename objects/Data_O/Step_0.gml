@@ -1,5 +1,5 @@
 tim ++;
-
+var _dt = delta_time / 1000000;
 
 if keyboard_check_pressed(vk_right) {
 	if (room_next(room) != -1) { room_goto_next() } 
@@ -49,6 +49,16 @@ if (global.RoomSkip == true) {
 // Audion
 audio_set_master_gain(0,global.SoundVolume);
 
-if keyboard_check_pressed(vk_enter){
-Noise_st()
+if keyboard_check(vk_enter) { Camera_Shake(15); }
+
+if (global.Catarsis == 1) {
+noise_timer -= _dt;
+
+if (noise_timer <= 0) {
+    Noise_st();
+    noise_timer = random_range(2, 5); 
 }
+
+}
+
+Camera_Shake_Update();
