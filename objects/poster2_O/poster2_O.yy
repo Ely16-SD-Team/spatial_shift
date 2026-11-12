@@ -9,8 +9,8 @@
   "name":"poster2_O",
   "overriddenProperties":[],
   "parent":{
-    "name":"Object_gp",
-    "path":"folders/eternal1man_gp/Object_gp.yy",
+    "name":"furniture_gp",
+    "path":"folders/eternal1man_gp/furniture_gp.yy",
   },
   "parentObjectId":null,
   "persistent":false,
