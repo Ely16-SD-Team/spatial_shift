@@ -47,3 +47,10 @@ x = _x;
 y = _y;
 PlayerDir = Dir;
 }
+
+StepSound = Step_SN;
+
+function PlayerSetSound (Sn) {
+	StepSound = Sn;
+}
+

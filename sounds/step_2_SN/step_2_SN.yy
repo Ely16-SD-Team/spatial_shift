@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"step_2_SN",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.42097506,
+  "exportDir":"",
+  "name":"step_2_SN",
+  "parent":{
+    "name":"Sound",
+    "path":"folders/Sound.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"step_2_SN.mp3",
+  "volume":1.0,
+}
