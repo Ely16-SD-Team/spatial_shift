@@ -5,7 +5,11 @@ var _status = video_get_status();
 
 if ((_dur > 0 && _pos >= _dur - 0.05) || _status == video_status_closed) {
     video_close(); 
-    room_goto(Bathroom_01_rm);
+    room_goto(RoomCatarsis_04_rm);
+	global.RoomSkip = 1;
+	global.RoomSpawnPos = [320,256]
+	global.PlayerStop = false;
+	global.RoomSpawnDir = -1;
 }
 
 if (timer < 1) {
