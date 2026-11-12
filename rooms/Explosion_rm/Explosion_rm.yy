@@ -20,8 +20,8 @@
   ],
   "name":"Explosion_rm",
   "parent":{
-    "name":"spatial_shift",
-    "path":"spatial_shift.yyp",
+    "name":"Room_do_Catarsis",
+    "path":"folders/Room_do_Catarsis.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

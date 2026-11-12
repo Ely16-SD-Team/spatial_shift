@@ -5,9 +5,19 @@ if (interacted == 1) {
     Player_O.y = -400;
     global.PlayerStop = true;
 	timer0 += _dt;
-	if (timer0 >= 5) { room_goto(Explosion_rm); }
+	timernoise += _dt
+	if timernoise >= 1.5{
+	timernoise = 0
+	Noise_st()
+	}
+	
+	if (timer0 >= 5) {
+		room_goto(Explosion_rm); 
+	}
     zoom_level = lerp(zoom_level, target_zoom, 0.04);
 }
+		
+
 
 var _new_w = cam_base_w * zoom_level;
 var _new_h = cam_base_h * zoom_level;

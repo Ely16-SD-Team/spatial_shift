@@ -11,3 +11,5 @@ timer0 = 0
 
 block = 0
 timer = 0
+
+timernoise = 0

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"BG_gp",
-    "path":"folders/eternal1man/Sprites_gp/BG_gp.yy",
+    "name":"OLD_BG",
+    "path":"folders/eternal1man/Sprites_gp/BG_gp/OLD_BG.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
