@@ -55,7 +55,7 @@ var isc2 = Bedsrum_new_03_rm
 var isc3 = Bathroom_new_01_rm
 
 
-if (global.Catarsis == 1) && !(room == isc1 && room == isc2 && room == isc3) {
+if (global.Catarsis == 1) && (room != isc1 && room != isc2 && room != isc3) {
 	noise_timer -= _dt;
 	if (noise_timer <= 0) {
 	    Noise_st();
