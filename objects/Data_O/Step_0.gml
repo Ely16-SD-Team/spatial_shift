@@ -49,3 +49,6 @@ if (global.RoomSkip == true) {
 // Audion
 audio_set_master_gain(0,global.SoundVolume);
 
+if keyboard_check_pressed(vk_enter){
+Noise_st()
+}
