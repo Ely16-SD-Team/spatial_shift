@@ -7,7 +7,7 @@ BaseArmRotate = 0;
 BaseArm1Pos = [x,y];
 BaseArm1Scale = [BaseScale[0],BaseScale[1]];
 BaseArm1Rotate = 0;
-tim = 0
+tim =  random(1000);
 BaseBodyPos = [x,y];
 BaseBodyScale = [BaseScale[0],BaseScale[1]];
 BaseBodyRotate = 0;
@@ -51,7 +51,8 @@ function UpdatePos() {
     BaseLeg2Pos = [x + 35 * PlayerDir, y];
 }
 
-
+rnd = irandom_range(3,5);
+rnd0 = irandom_range(5,8);
 spd = irandom_range(3,6);
 depth = 0
 dead = 0;

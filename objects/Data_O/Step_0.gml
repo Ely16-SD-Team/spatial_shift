@@ -123,3 +123,30 @@ for (var i = 0; i < array_length(my_objects); i++) {
     }
 }
 
+// sound
+if (room == Bathroom_01_rm || room == VideoHouse_01_rm) {
+	if (!audio_is_playing(rain_SN)) {
+	audio_play_sound(rain_SN,1,1,global.SoundVolume);
+	}
+}
+
+// vave 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

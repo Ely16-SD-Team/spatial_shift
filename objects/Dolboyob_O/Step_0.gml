@@ -9,9 +9,9 @@ if (place_meeting(x + PlayerDir, y, NPCTRIGER_O)) {
     PlayerDir = -PlayerDir;
 }
 
-var _move = dsin(tim * 5) * _F; 
-var _move1 = dsin(tim * 5) * 1;
-var _arm = 90 * PlayerDir + (dsin(tim * 8) * 30 * PlayerDir);
+var _move = dsin(tim * rnd) * _F; 
+var _move1 = dsin(tim * rnd) * 1;
+var _arm = 90 * PlayerDir + (dsin(tim * rnd0) * 30 * PlayerDir);
 
 BaseLeg1Rotate = _move;
 BaseLeg2Rotate = -_move;
@@ -43,10 +43,11 @@ var _player_y = Player_O.PlayerGetPos()[1];
         _P.vsp = lengthdir_y(_spd, _dir) - random_range(2, 5); 
         _P.rot_spd = random_range(-12, 12);
     }
-
-
-
-
-	
 	
 instance_destroy() }
+
+if x < 0 { instance_destroy() }
+if x > room_width { instance_destroy() }
+
+if y < 0 { instance_destroy() }
+if y > room_height { instance_destroy() }

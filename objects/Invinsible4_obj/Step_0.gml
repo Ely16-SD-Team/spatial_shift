@@ -27,8 +27,17 @@ if (interacted == 1) {
     global.PlayerStop = true;
 	interacted = -1
 }
+timer += _dt
 
-if (timer > 3) {
-	global.ScreenManager.Trigger("fade_to_black");
-	timer = -1
-} else { if (timer > 0) timer += _dt }
+if (timer >= 3 && !fade_started) {
+    fade_started = true;
+    global.ScreenManager.Trigger("fade_to_black");
+}
+
+if (timer >= 6) {
+    room_goto(VideoHouse_01_rm);
+	global.ScreenManager.Trigger("fade_to_clear");
+	global.PlayerStop = false;
+}
+
+
