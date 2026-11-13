@@ -43,11 +43,6 @@ var _player_y = Player_O.PlayerGetPos()[1];
         _P.vsp = lengthdir_y(_spd, _dir) - random_range(2, 5); 
         _P.rot_spd = random_range(-12, 12);
     }
-
-
-
-
-	
 	
 instance_destroy() }
 
