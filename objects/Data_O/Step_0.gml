@@ -79,35 +79,30 @@ if keyboard_check_pressed(ord("N")) { global.Catarsis = 1 }
 
 
     
-    var _lay_id = layer_get_id("BG");
-    if (layer_exists(_lay_id)) {
+
+    
+var _layers = ["BG", "BG0"];
+    for (var l = 0; l < array_length(_layers); l++) {
         
-        var _elements = layer_get_all_elements(_lay_id);
-        if (array_length(_elements) > 0) {
+        var _lay_id = layer_get_id(_layers[l]);
+        
+        if (layer_exists(_lay_id)) {
             
-            var _spr = _elements[0];
+            var _elements = layer_get_all_elements(_lay_id);
             
-            if (layer_get_element_type(_spr) == layerelementtype_sprite) {
-                layer_sprite_speed(_spr, 0);
-                layer_sprite_index(_spr, global.Pizdec);
+            for (var i = 0; i < array_length(_elements); i++) {
+                
+                var _spr = _elements[i];
+
+                if (layer_get_element_type(_spr) == layerelementtype_sprite) {
+                    layer_sprite_speed(_spr, 0);
+                    layer_sprite_index(_spr, global.Pizdec);
+                }
             }
         }
     }
-	
-	var _lay_id1 = layer_get_id("BG0");
-    if (layer_exists(_lay_id1)) {
-        
-        var _elements = layer_get_all_elements(_lay_id);
-        if (array_length(_elements) > 0) {
-            
-            var _spr = _elements[0];
-            
-            if (layer_get_element_type(_spr) == layerelementtype_sprite) {
-                layer_sprite_speed(_spr, 0);
-                layer_sprite_index(_spr, global.Pizdec);
-            }
-        }
-    }
+
+
 
 layer_sprite_index(my_asset_sprite, global.Pizdec);
 
