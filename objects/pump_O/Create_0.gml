@@ -1,6 +1,11 @@
-hsp = 0;          // Горизонтальная скорость
-vsp = 0;          // Вертикальная скорость
-grav = 0.4;       // Сила гравитации
-rot_spd = 0;      // Скорость вращения в воздухе
-bounce = 0.5;     // Упругость отскока (0 = не прыгает, 0.5 = средний отскок, 0.8 = как мячик)
+hsp = 0;        
+vsp = 0;       
+grav = 0.4;      
+rot_spd = 0;     
+bounce = 0;    
 friction_val = 0.85;
+life_time = irandom_range(5,8);
+Scale = 1
+_floor_y = 380;
+image_xscale = Scale;
+image_yscale = Scale;
