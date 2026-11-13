@@ -69,8 +69,9 @@ ChangeToIdle();
 	if (_move == _F || _move = -_F) { audio_play_sound(StepSound,0,0) } 
     BaseLeg2Rotate = -_move;
 	
-	BaseLeg1Pos[1] += _move1 * 1.5; 
-	BaseLeg2Pos[1] += -_move1 * 1.5;
+	BaseLeg1Pos[1] += _move1 * 1.1; 
+	BaseLeg2Pos[1] += -_move1 * 1.1;
+	BaseBodyPos[1] += _move1 * 1.5; 
 	
     BaseArmRotate  = _arm;
     BaseHeadPos[1] += _head;
