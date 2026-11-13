@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.27743763,
+  "duration":0.31564626,
   "exportDir":"",
   "name":"Step_SN",
   "parent":{
@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"Step_SN.mp3",
-  "volume":0.8,
+  "volume":0.52,
 }

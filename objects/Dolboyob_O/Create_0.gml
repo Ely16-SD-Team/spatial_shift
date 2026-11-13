@@ -24,7 +24,7 @@ BaseLeg2Rotate = 0;
 
 PlayerDir = choose(-1, 1);
 
-var _chances =[0,1,1,2,3,7,7,7]; 
+var _chances =[7,7,7,3,2,1,1,0]; 
 
 var _total = 0;
 for (var i = 0; i < array_length(_chances); i++) {
