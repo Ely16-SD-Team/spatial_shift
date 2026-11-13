@@ -10,15 +10,17 @@ if (place_meeting(x + hsp, y, AllWall_O)) {
 }
 x += hsp;
 
-if (place_meeting(x, y + vsp, AllWall_O) || (y + vsp >= _floor_y && vsp > 0)) {
+var _bottom_offset = bbox_bottom - y;
+
+if (place_meeting(x, y + vsp, AllWall_O) || (bbox_bottom + vsp >= _floor_y && vsp > 0)) {
     
     if (place_meeting(x, y + vsp, AllWall_O)) {
         while (!place_meeting(x, y + sign(vsp), AllWall_O)) {
             y += sign(vsp);
         }
     } 
-    else if (y + vsp >= _floor_y) {
-        y = _floor_y;
+    else if (bbox_bottom + vsp >= _floor_y) {
+        y = _floor_y - _bottom_offset;
     }
     
     if (abs(vsp) > 1.5) {
@@ -32,8 +34,10 @@ if (place_meeting(x, y + vsp, AllWall_O) || (y + vsp >= _floor_y && vsp > 0)) {
         if (abs(hsp) < 0.1) hsp = 0;
     }
 } else {
-
     y += vsp;
 }
+
+image_angle += rot_spd;
+
 
 if (life_time > 0) {life_time -= _dt} else { instance_destroy() }
