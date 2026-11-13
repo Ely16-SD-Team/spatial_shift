@@ -13,6 +13,7 @@
     {"name":"inst_46D5A82B1","path":"rooms/VideoHouse_02_rm/VideoHouse_02_rm.yy",},
     {"name":"inst_46985E2C1","path":"rooms/VideoHouse_02_rm/VideoHouse_02_rm.yy",},
     {"name":"inst_3D1A9E1A","path":"rooms/VideoHouse_02_rm/VideoHouse_02_rm.yy",},
+    {"name":"inst_68BCC62B","path":"rooms/VideoHouse_02_rm/VideoHouse_02_rm.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -30,6 +31,7 @@
         {"$GMRInstance":"v4","%Name":"inst_46D5A82B1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_46D5A82B1","objectId":{"name":"NPCTRIGER_O","path":"objects/NPCTRIGER_O/NPCTRIGER_O.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":5.5,"x":-32.0,"y":64.0,},
         {"$GMRInstance":"v4","%Name":"inst_46985E2C1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_46985E2C1","objectId":{"name":"NPCTRIGER_O","path":"objects/NPCTRIGER_O/NPCTRIGER_O.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":5.5,"x":1856.0,"y":64.0,},
         {"$GMRInstance":"v4","%Name":"inst_3D1A9E1A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3D1A9E1A","objectId":{"name":"GOTO_new_7_O","path":"objects/GOTO_new_7_O/GOTO_new_7_O.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.328125,"scaleY":5.203125,"x":-96.0,"y":64.0,},
+        {"$GMRInstance":"v4","%Name":"inst_68BCC62B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_68BCC62B","objectId":{"name":"Invinsible5_obj","path":"objects/Invinsible5_obj/Invinsible5_obj.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":261.0,"y":234.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"BG","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_3452EC14_1","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_3452EC14_1","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"Video1_sp","path":"sprites/Video1_sp/Video1_sp.yy",},"x":0.0,"y":0.0,},

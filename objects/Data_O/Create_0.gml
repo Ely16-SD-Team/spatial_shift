@@ -29,6 +29,7 @@ my_asset_sprite = 0;
 
 wave = 0;
 waveAnim = 0;
-
+CleredRoom = [];
+global.CleredSpecial = [];
 
 

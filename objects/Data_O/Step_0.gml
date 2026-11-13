@@ -132,13 +132,36 @@ if (room == Menu_rm || room == Bathroom_01_rm || room == VideoHouse_01_rm) {
 
 // vave 
 
+// Spawn 
+if (array_contains(CleredRoom, room)) {
+
 if (instance_number(Dolboyob_O) > 0) { wave = 1 }
 
 if (wave == 1) {
-if (instance_number(Dolboyob_O) <= 0) { wave = 0; waveAnim = 5; instance_destroy(Vawe_O) }
+if (instance_number(Dolboyob_O) <= 0) { 
+wave = 0; waveAnim = 5; 
+instance_destroy(Vawe_O) 
+array_push(CleredRoom,room) 
+if (room == VideoHouse_02_rm) { array_push(global.CleredSpecial,1) }
+if (room == VideoHouse_02_rm_1) { array_push(global.CleredSpecial,2) }
+if (room == VideoHouse_02_rm_2) { array_push(global.CleredSpecial,3) }
+if (room == VideoHouse_02_rm_3) { array_push(global.CleredSpecial,4) }
+}
 }
 
 if (waveAnim > 0) { waveAnim -= _dt; }
+
+    var _allobj = [Dolboyob_O, Dolboyob_O_1_8, Dolboyob_O_2_9]; 
+    for (var j = 0; j < array_length(_allobj); j++) {
+        var _enemy = _allobj[j];  
+        if (instance_exists(_enemy)) {
+            instance_destroy(_enemy, false);
+        }
+    }
+}
+
+
+
 
 
 
