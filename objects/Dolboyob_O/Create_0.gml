@@ -22,7 +22,7 @@ BaseLeg2Pos = [x,y];
 BaseLeg2Scale = [BaseScale[0] - _LegScaleBord,BaseScale[1] - _LegScaleBord];
 BaseLeg2Rotate = 0;
 
-PlayerDir =  1;
+PlayerDir = choose(-1, 1);
 
 var _chances =[0,1,1,2,3,7,7,7]; 
 
@@ -52,6 +52,6 @@ function UpdatePos() {
 }
 
 
-spd = 5;
-depth = -10
+spd = irandom_range(3,6);
+depth = -1
 dead = 0;

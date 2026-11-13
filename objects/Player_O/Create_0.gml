@@ -121,13 +121,50 @@ function Shoot(_angle, _muzzle_x, _muzzle_y) {
     Reload = ReloadMax;
     audio_play_sound(Shoot_SN, 1, 0, global.SoundVolume);
     
-    var _dist = 1000; 
-    var _end_x = _muzzle_x + lengthdir_x(_dist, _angle);
-    var _end_y = _muzzle_y + lengthdir_y(_dist, _angle);
 
-    var _hit = collision_line(_muzzle_x, _muzzle_y, _end_x, _end_y, Dolboyob_O, false, true);
+var _dist = 1000;
+var _start_x = x;
+var _start_y = y - 32;
 
-    if (_hit != noone) {
-        _hit.dead = 1;
-    }	
+var _end_x = _start_x + lengthdir_x(_dist, _angle);
+var _end_y = _start_y + lengthdir_y(_dist, _angle);
+
+var _hit_list = ds_list_create();
+var _count = collision_line_list(_start_x, _start_y, _end_x, _end_y, Dolboyob_O, false, true, _hit_list, true);
+
+var _target = noone;
+
+for (var i = 0; i < _count; i++) {
+    var _candidate = _hit_list[| i];
+    
+    if (_candidate.dead == 0) {
+        _target = _candidate;
+        break;
+    }
+}
+ds_list_destroy(_hit_list);
+
+if (_target == noone) {
+    for (var d = 0; d <= _dist; d += 16) {
+        var _px = _start_x + lengthdir_x(d, _angle);
+        var _py = _start_y + lengthdir_y(d, _angle);
+        
+        var _near = instance_nearest(_px, _py, Dolboyob_O);
+        if (_near != noone && _near.dead == 0) {
+            if (point_distance(_px, _py, _near.x, _near.y - 32) < 28) {
+                _target = _near;
+                break;
+            }
+        }
+    }
+}
+
+if (_target != noone) {
+    _target.dead = 1;
+} else {
+}
+
+
+
+
 }

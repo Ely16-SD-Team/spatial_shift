@@ -149,6 +149,7 @@
     {"id":{"name":"Dude_Head_sp","path":"sprites/Dude_Head_sp/Dude_Head_sp.yy",},},
     {"id":{"name":"Dude_leg1_sp","path":"sprites/Dude_leg1_sp/Dude_leg1_sp.yy",},},
     {"id":{"name":"Dude_leg2_sp","path":"sprites/Dude_leg2_sp/Dude_leg2_sp.yy",},},
+    {"id":{"name":"Enemy_S","path":"sprites/Enemy_S/Enemy_S.yy",},},
     {"id":{"name":"Goto_S_Alt","path":"sprites/Goto_S_Alt/Goto_S_Alt.yy",},},
     {"id":{"name":"Goto_S","path":"sprites/Goto_S/Goto_S.yy",},},
     {"id":{"name":"Illustration_sp","path":"sprites/Illustration_sp/Illustration_sp.yy",},},
