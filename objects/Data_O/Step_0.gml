@@ -53,9 +53,13 @@ audio_set_master_gain(0,global.SoundVolume)
 var isc1 = RoomCatarsis_new_01_rm 
 var isc2 = Bedsrum_new_03_rm
 var isc3 = Bathroom_new_01_rm
+var isc4 = VideoHouse_02_rm_1
+var isc5 = VideoHouse_02_rm_2
+var isc6 = VideoHouse_02_rm_3
 
 
-if (global.Catarsis == 1) && (room != isc1 && room != isc2 && room != isc3) {
+if (global.Catarsis == 1) && (room != isc1 && room != isc2 && room != isc3 
+&& room != isc4 && room != isc5 && room != isc6) {
 	noise_timer -= _dt;
 	if (noise_timer <= 0) {
 	    Noise_st();
@@ -135,11 +139,11 @@ if (room == Menu_rm || room == Bathroom_01_rm || room == VideoHouse_01_rm) {
 if (instance_number(Dolboyob_O) > 0) { wave = 1 }
 
 if (wave == 1) {
-if (instance_number(Dolboyob_O) <= 0) { 
-if (room == VideoHouse_02_rm) { array_push(global.CleredSpecial,1) }
-if (room == VideoHouse_02_rm_1) { array_push(global.CleredSpecial,2) }
-if (room == VideoHouse_02_rm_2) { array_push(global.CleredSpecial,3) }
-if (room == VideoHouse_02_rm_3) { array_push(global.CleredSpecial,4) }
+if (instance_number(Dolboyob_O) <= 0) {
+if (room == VideoHouse_02_rm && !array_contains(global.CleredSpecial,1)) { array_push(global.CleredSpecial,1) }
+if (room == VideoHouse_02_rm_1) && !array_contains(global.CleredSpecial,2) { array_push(global.CleredSpecial,2) }
+if (room == VideoHouse_02_rm_2) && !array_contains(global.CleredSpecial,3) { array_push(global.CleredSpecial,3) }
+if (room == VideoHouse_02_rm_3) && !array_contains(global.CleredSpecial,4) { array_push(global.CleredSpecial,4) }
 wave = 0; waveAnim = 5; instance_destroy(Vawe_O) array_push(CleredRoom,room) }
 }
 
@@ -147,7 +151,7 @@ if (waveAnim > 0) { waveAnim -= _dt; }
 
 // Spawn 
 if (array_contains(CleredRoom, room)) {
-    
+
     var _allobj = [Dolboyob_O, Dolboyob_O_1_8, Dolboyob_O_2_9]; 
     for (var j = 0; j < array_length(_allobj); j++) {
         var _enemy = _allobj[j];  

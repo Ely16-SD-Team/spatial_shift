@@ -13,7 +13,10 @@
     "name":"Objects",
     "path":"folders/Ely16/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"Dolboyob_O",
+    "path":"objects/Dolboyob_O/Dolboyob_O.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
