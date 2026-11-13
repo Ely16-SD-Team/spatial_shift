@@ -1,0 +1,1 @@
+global.ScreenManager = new Transleet(0, 0.07);
