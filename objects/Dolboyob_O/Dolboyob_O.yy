@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Illustration_sp",
-    "path":"sprites/Illustration_sp/Illustration_sp.yy",
+    "name":"Enemy_S",
+    "path":"sprites/Enemy_S/Enemy_S.yy",
   },
   "spriteMaskId":null,
   "visible":true,
