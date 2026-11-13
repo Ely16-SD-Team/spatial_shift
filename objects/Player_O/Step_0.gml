@@ -14,8 +14,10 @@ tim ++;
 
 if (global.PlayerGun == 0) {
 
+if (global.PlayerStop == 0) {
 if (_move_dir != 0) {
     PlayerDir = _move_dir;
+}
 }
 
 UpdatePos ();
@@ -95,12 +97,14 @@ var _muzzle_x = BaseArmPos[0] + lengthdir_x(_len, _real_angle) + lengthdir_x(_do
 var _muzzle_y = BaseArmPos[1] + lengthdir_y(_len, _real_angle) + lengthdir_y(_down, _perp_angle);
 	
 	
-	
+if (global.PlayerStop == 0) {	
 	
 if (mouse_x >= x) {
 PlayerDir = 1;
 } else {
 	PlayerDir = -1; 
+}
+
 }
 
 UpdatePos ();
@@ -139,7 +143,7 @@ BaseArmRotate = FinalyRot ;
 BaseArm1Rotate = FinalyRot ;
 
 // Shoot
-if (mouse_check_button_pressed(mb_left) && Reload <=0) { 
+if (mouse_check_button_pressed(mb_left) && Reload <=0 && global.PlayerStop == 0) { 
 part_type_direction(pt, _real_angle - 15, _real_angle + 15, 0, 0);
 part_particles_create(ps, _muzzle_x, _muzzle_y, pt, 10); 
 ArmRecoil = irandom_range(10, 15);
@@ -193,8 +197,8 @@ BaseHeadPos[1] = BaseHeadPos[1] + random_range(-0.1,0.1)
 
 if (_move_dir == 0) { ChangeToIdle () }
 
-// Shoot
-if (mouse_check_button_pressed(mb_left) && Reload <=0) { 
+// Shootif (global.PlayerStop == 0) {
+if (mouse_check_button_pressed(mb_left) && Reload <=0 && global.PlayerStop == 0) { 
 part_type_direction(pt, _real_angle - 15, _real_angle + 15, 0, 0);
 part_particles_create(ps, _muzzle_x, _muzzle_y, pt, 10);
 ArmRecoil = irandom_range(10, 20);

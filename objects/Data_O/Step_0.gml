@@ -62,25 +62,7 @@ if (global.Catarsis == 1) && (room != isc1 && room != isc2 && room != isc3) {
 	    noise_timer = random_range(2, 5);
 		global.Pizdec ++;
 	}
-}
 
-
-
-if (global.Pizdec > 1) { global.Pizdec = 0 }
-
-
-// 8==============================================D
-if (global.PostAnim == 1) { instance_create_depth(0,0,0,PostCatarsis_O) global.PostAnim = 0 }
-
-Camera_Shake_Update()
-
-if keyboard_check_pressed(ord("N")) { global.Catarsis = 1 }
-
-
-
-    
-
-    
 var _layers = ["BG", "BG0"];
     for (var l = 0; l < array_length(_layers); l++) {
         
@@ -106,6 +88,26 @@ var _layers = ["BG", "BG0"];
 
 layer_sprite_index(my_asset_sprite, global.Pizdec);
 
+
+} else { global.Pizdec = 0 }
+
+
+
+if (global.Pizdec > 1) { global.Pizdec = 0 }
+
+
+// 8==============================================D
+if (global.PostAnim == 1) { instance_create_depth(0,0,0,PostCatarsis_O) global.PostAnim = 0 }
+
+Camera_Shake_Update()
+
+if keyboard_check_pressed(ord("N")) { global.Catarsis = 1 }
+
+
+
+    
+
+  
 // СЮДА
 var my_objects = []
 
