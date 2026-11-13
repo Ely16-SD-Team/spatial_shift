@@ -1,23 +1,12 @@
-function UpdatePos () {
-BaseArmPos = [x - (25 * PlayerDir), y - 28];
-BaseArm1Pos = [x - (25 * PlayerDir), y - 28];
-BaseBodyPos = [x,y];
-BaseHeadPos = [x,y + BaseHeadBord];
-BaseLeg1Pos = [x,y];
-BaseLeg2Pos = [x,y];
-}
-
-
+// Knok
+ _dt = min(0.1, delta_time / 1000000)
+ArmRecoil = lerp(ArmRecoil, 0, 0.2);
 
 // Input
 var _key_right = keyboard_check(ord("D"));
 var _key_left  = keyboard_check(ord("A"));
 
 var _move_dir = _key_right - _key_left;
-
-
-
-
 
 // SIN COS
 tim ++;
@@ -96,6 +85,18 @@ break;
 
 } else {
 	
+var _len  = 120; 
+var _down = 20; 
+
+var _real_angle = ((PlayerDir == 1) ? FinalyRot : (180 + FinalyRot));
+var _perp_angle = _real_angle - (90 * PlayerDir); 
+
+var _muzzle_x = BaseArmPos[0] + lengthdir_x(_len, _real_angle) + lengthdir_x(_down, _perp_angle);
+var _muzzle_y = BaseArmPos[1] + lengthdir_y(_len, _real_angle) + lengthdir_y(_down, _perp_angle);
+	
+	
+	
+	
 if (mouse_x >= x) {
 PlayerDir = 1;
 } else {
@@ -106,9 +107,9 @@ UpdatePos ();
 	
 var _raw_rad = point_direction(x, y, mouse_x, mouse_y);
 var _base_angle = (PlayerDir == 1) ? 0 : 180;
-var _target_rot = clamp(angle_difference(_raw_rad, _base_angle), -20, 20);
+var _target_rot = clamp(angle_difference(_raw_rad, _base_angle), -10, 10);
 
-FinalyRot = lerp(FinalyRot, _target_rot, 0.05) + random_range(-0.1,0.1);	
+FinalyRot = lerp(FinalyRot, _target_rot, 0.05) + random_range(-0.1, 0.1) + (ArmRecoil / 3) * PlayerDir;
 	
 switch(current_state) {
 
@@ -137,6 +138,14 @@ if (_move_dir != 0) {
 BaseArmRotate = FinalyRot ;
 BaseArm1Rotate = FinalyRot ;
 
+// Shoot
+if (mouse_check_button_pressed(mb_left) && Reload <=0) { 
+part_type_direction(pt, _real_angle - 15, _real_angle + 15, 0, 0);
+part_particles_create(ps, _muzzle_x, _muzzle_y, pt, 10); 
+ArmRecoil = irandom_range(10, 15);
+Reload = ReloadMax;
+audio_play_sound(Shoot_SN,1,0,global.SoundVolume);
+}
 
 
 break;
@@ -184,6 +193,15 @@ BaseHeadPos[1] = BaseHeadPos[1] + random_range(-0.1,0.1)
 
 if (_move_dir == 0) { ChangeToIdle () }
 
+// Shoot
+if (mouse_check_button_pressed(mb_left) && Reload <=0) { 
+part_type_direction(pt, _real_angle - 15, _real_angle + 15, 0, 0);
+part_particles_create(ps, _muzzle_x, _muzzle_y, pt, 10);
+ArmRecoil = irandom_range(10, 20);
+Reload = ReloadMax;
+audio_play_sound(Shoot_SN,1,0,global.SoundVolume);
+}
+
 break;
 
 }
@@ -195,26 +213,21 @@ break;
 
 
 
+if (Reload > 0) { Reload -= _dt }
 
-
+if (abs(knockback_spd) > 0.1) {
+    if (!place_meeting(x + knockback_spd, y, AllWall_O)) {
+        x += knockback_spd;
+    }
+    knockback_spd = lerp(knockback_spd, 0, 0.2);
+} else {
+    knockback_spd = 0;
+}
 
 
 
 if (keyboard_check_pressed(vk_f1)) { global.PlayerGun = 1 current_state =  States.PLAYER_SHOOT_IDLE }
 
-
-
-function ChangeToIdle () {
-    BaseLeg1Rotate = 0;
-    BaseLeg2Rotate = 0;
-	BaseHeadPos[1] = y + BaseHeadBord;
-    if (global.PlayerGun == 0) {
-    BaseArmRotate = 0;
-    current_state = States.PLAYER_IDLE;
-} else {
-    current_state = States.PLAYER_SHOOT_IDLE;
-}
-}
 if (global.PlayerStop == true) { ChangeToIdle (); }
 
 if (global.ReserchMask == false){

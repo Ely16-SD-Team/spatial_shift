@@ -3,7 +3,8 @@ enum States {
 	PLAYER_WALK,
 	PLAYER_RUN,
 	PLAYER_SHOOT_IDLE,
-	PLAYER_SHOOT_WALK
+	PLAYER_SHOOT_WALK,
+	PLAYER_SHOOT
 }
 if (global.PlayerGun == 0) {
 current_state = States.PLAYER_IDLE;
@@ -44,7 +45,8 @@ BaseLeg2Rotate = 0;
 
 MoveSpeed = 2
 
-
+KnokBack = 0;
+knockback_spd = 0;
 
 PlayerDir = 1;
 
@@ -66,3 +68,47 @@ function PlayerSetSound (Sn) {
 
 FinalyRot = 0;
 
+// Bullet
+
+ps = part_system_create();
+pt = part_type_create();
+part_system_depth(ps, -100);
+// setup a default particle
+part_type_blend(pt, 1);
+part_type_shape(pt, pt_shape_pixel);
+part_type_size(pt, 3, 2, 0, 0);
+part_type_scale(pt, 1, 1);
+part_type_color3(pt, -16726785, -16742657, -16766465);
+part_type_alpha3(pt, 1, 1, 1);
+part_type_life(pt, 35, 91);
+part_type_orientation(pt, 1, 8, 0, 0, false);
+part_type_speed(pt, 10.32, 18.34, 0.51, 0);
+part_type_direction(pt, 10, 33.67, 0, 0);
+part_type_gravity(pt, 0, 0);
+
+ArmRecoil = 0;
+Reload = 0;
+ReloadMax = 1.88;
+
+function ChangeToIdle () {
+    BaseLeg1Rotate = 0;
+    BaseLeg2Rotate = 0;
+	BaseHeadPos[1] = y + BaseHeadBord;
+    if (global.PlayerGun == 0) {
+    BaseArmRotate = 0;
+    current_state = States.PLAYER_IDLE;
+} else {
+    current_state = States.PLAYER_SHOOT_IDLE;
+}
+}
+
+function UpdatePos () {
+    var _recoil_offset = ArmRecoil * PlayerDir;
+    
+    BaseArmPos  = [x - (25 * PlayerDir) - _recoil_offset, y - 28];
+    BaseArm1Pos = [x - (25 * PlayerDir) - _recoil_offset, y - 28];
+    BaseBodyPos = [x - _recoil_offset / 4, y - _recoil_offset / 4];
+    BaseHeadPos = [x, y + BaseHeadBord];
+    BaseLeg1Pos = [x, y];
+    BaseLeg2Pos = [x, y];
+}

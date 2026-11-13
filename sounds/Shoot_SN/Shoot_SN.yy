@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"Shoot_SN",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":1.8756236,
+  "exportDir":"",
+  "name":"Shoot_SN",
+  "parent":{
+    "name":"Sound",
+    "path":"folders/Sound.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"Shoot_SN.mp3",
+  "volume":0.71,
+}

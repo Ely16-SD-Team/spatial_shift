@@ -27,3 +27,5 @@ draw_sprite_ext(Dude_Head_sp,global.ReserchMask,BaseHeadPos[0],BaseHeadPos[1],Ba
 draw_sprite_ext(Dude_arm1_sp,0,BaseArmPos[0],BaseArmPos[1],BaseArmScale[0]       * PlayerDir,BaseArmScale[1],BaseArmRotate,c_white,1)
 
 }
+
+
