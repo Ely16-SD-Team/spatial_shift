@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"ost1_ost",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":23.823673,
+  "exportDir":"",
+  "name":"ost1_ost",
+  "parent":{
+    "name":"OST_gp",
+    "path":"folders/OST_gp.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"ost1_ost.mp3",
+  "volume":1.0,
+}
