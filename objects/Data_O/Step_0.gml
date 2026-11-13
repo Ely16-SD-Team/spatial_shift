@@ -59,10 +59,55 @@ if (global.Catarsis == 1) && (room != isc1 && room != isc2 && room != isc3) {
 	noise_timer -= _dt;
 	if (noise_timer <= 0) {
 	    Noise_st();
-	    noise_timer = random_range(2, 5); 
+	    noise_timer = random_range(2, 5);
+		global.Pizdec ++;
 	}
 }
+
+
+
+if (global.Pizdec > 1) { global.Pizdec = 0 }
+
+
 // 8==============================================D
-if (global.PostAnim == 1) { instance_create_depth(0,0,0,PostCatarsis_O) global.PostAnim =0 }
+if (global.PostAnim == 1) { instance_create_depth(0,0,0,PostCatarsis_O) global.PostAnim = 0 }
 
 Camera_Shake_Update()
+
+if keyboard_check_pressed(ord("N")) { global.Catarsis = 1 }
+
+
+
+    
+    var _lay_id = layer_get_id("BG");
+    if (layer_exists(_lay_id)) {
+        
+        var _elements = layer_get_all_elements(_lay_id);
+        if (array_length(_elements) > 0) {
+            
+            var _spr = _elements[0];
+            
+            if (layer_get_element_type(_spr) == layerelementtype_sprite) {
+                layer_sprite_speed(_spr, 0);
+                layer_sprite_index(_spr, global.Pizdec);
+            }
+        }
+    }
+
+layer_sprite_index(my_asset_sprite, global.Pizdec);
+
+// СЮДА
+var my_objects = []
+
+for (var i = 0; i < array_length(my_objects); i++) {
+    var _obj = my_objects[i];
+        
+    if (instance_exists(_obj)) {
+            
+        with (_obj) {
+            image_speed = 0;
+            image_index = global.Pizdec;
+        }
+    }
+}
+

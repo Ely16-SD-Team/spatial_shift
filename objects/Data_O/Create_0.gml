@@ -21,7 +21,10 @@ global.PostAnim = 0;
 
 global.PlayerGun = 0;
 
+global.Pizdec = 0;
+
+
 noise_timer = random_range(2, 5);
 
-
+my_asset_sprite = 0;
 
