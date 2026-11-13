@@ -1,7 +1,7 @@
 global.FadeSpeed = 0.07;
 randomize(); 
 global.ReserchMask = false
-global.ScreenManager = new Transleet(0, global.FadeSpeed ); 
+global.ScreenManager = new Transleet(0, 0.07); 
 PrevCamX = 0;
 shake_intensity = 0;
 tim = 0;
