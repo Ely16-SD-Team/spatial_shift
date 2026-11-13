@@ -1,4 +1,4 @@
-BaseScale = [1,1]
+BaseScale = [0.95,0.95]
 
 BaseArmPos = [x,y];
 BaseArmScale = [BaseScale[0],BaseScale[1]];
@@ -53,5 +53,5 @@ function UpdatePos() {
 
 
 spd = irandom_range(3,6);
-depth = -1
+depth = 0
 dead = 0;
