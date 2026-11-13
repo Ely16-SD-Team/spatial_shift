@@ -68,12 +68,12 @@ ChangeToIdle();
     BaseLeg1Rotate = _move;
 	if (_move == _F || _move = -_F) { audio_play_sound(StepSound,0,0) } 
     BaseLeg2Rotate = -_move;
-	
-	var _step1 = max(0, dsin(tim * 5)) * 1.3;
-	var _step2 = max(0, dsin(tim * 5 + 180)) * 1.3;
-
+	/*
+	var _step1 = max(0, dsin(tim * 5)) * 2;
+	var _step2 = max(0, dsin(tim * 5 + 180)) * 2;
 	BaseLeg1Pos[1] -= _step1;
 	BaseLeg2Pos[1] -= _step2;
+	*/
 	BaseBodyPos[1] += _move1 * 1.5; 
 	
     BaseArmRotate  = _arm;
