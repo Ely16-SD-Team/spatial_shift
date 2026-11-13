@@ -11,7 +11,7 @@ draw_text_colour((_cam_width/2) - string_width(global.DescriptionText) / 2,_cam_
 
 if (waveAnim >0) {
 var _sn = dsin(tim * 6) * 30; 
-draw_sprite_ext(Sprite52,image_index / 10,550 + _sn,(camera_get_view_height(view_camera[0]) / 2) - 150,1,1,0,c_white,1)
+draw_sprite_ext(Sprite52,image_index / 10,530 + _sn,(camera_get_view_height(view_camera[0]) / 2) - 150,1,1,0,c_white,1)
 }
 
 // Translete

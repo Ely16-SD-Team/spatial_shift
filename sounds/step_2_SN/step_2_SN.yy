@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.6548299,
+  "duration":0.20097506,
   "exportDir":"",
   "name":"step_2_SN",
   "parent":{
