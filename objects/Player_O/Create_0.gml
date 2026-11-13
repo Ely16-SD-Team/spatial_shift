@@ -112,3 +112,22 @@ function UpdatePos () {
     BaseLeg1Pos = [x, y];
     BaseLeg2Pos = [x, y];
 }
+
+function Shoot(_angle, _muzzle_x, _muzzle_y) {
+    part_type_direction(pt, _angle - 15, _angle + 15, 0, 0);
+    part_particles_create(ps, _muzzle_x, _muzzle_y, pt, 10);
+    
+    ArmRecoil = irandom_range(10, 20);
+    Reload = ReloadMax;
+    audio_play_sound(Shoot_SN, 1, 0, global.SoundVolume);
+    
+    var _dist = 1000; 
+    var _end_x = _muzzle_x + lengthdir_x(_dist, _angle);
+    var _end_y = _muzzle_y + lengthdir_y(_dist, _angle);
+
+    var _hit = collision_line(_muzzle_x, _muzzle_y, _end_x, _end_y, Dolboyob_O, false, true);
+
+    if (_hit != noone) {
+        _hit.dead = 1;
+    }	
+}

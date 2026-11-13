@@ -24,12 +24,31 @@ BaseLeg2Rotate = 0;
 
 PlayerDir =  1;
 
+var _chances =[0,1,1,2,3,7,7,7]; 
+
+var _total = 0;
+for (var i = 0; i < array_length(_chances); i++) {
+    _total += _chances[i];
+}
+
+var _roll = random(_total);
+var _current = 0;
+form = 0; 
+
+for (var i = 0; i < array_length(_chances); i++) {
+    _current += _chances[i];
+    if (_roll < _current) {
+        form = i;
+        break;
+    }
+}
+
 function UpdatePos() {
     BaseArmPos  = [x - 4 * PlayerDir,  y - 32];
     BaseArm1Pos = [x + 25 * PlayerDir, y - 32];
     BaseBodyPos = [x + 25 * PlayerDir, y];
-    BaseLeg1Pos = [x + 20 * PlayerDir, y];
-    BaseLeg2Pos = [x + 10 * PlayerDir, y];
+    BaseLeg1Pos = [x + 18 * PlayerDir, y];
+    BaseLeg2Pos = [x + 35 * PlayerDir, y];
 }
 
 

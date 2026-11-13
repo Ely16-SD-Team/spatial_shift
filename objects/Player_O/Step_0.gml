@@ -144,11 +144,7 @@ BaseArm1Rotate = FinalyRot ;
 
 // Shoot
 if (mouse_check_button_pressed(mb_left) && Reload <=0 && global.PlayerStop == 0) { 
-part_type_direction(pt, _real_angle - 15, _real_angle + 15, 0, 0);
-part_particles_create(ps, _muzzle_x, _muzzle_y, pt, 10); 
-ArmRecoil = irandom_range(10, 15);
-Reload = ReloadMax;
-audio_play_sound(Shoot_SN,1,0,global.SoundVolume);
+Shoot(_real_angle, _muzzle_x, _muzzle_y);
 }
 
 
@@ -199,21 +195,7 @@ if (_move_dir == 0) { ChangeToIdle () }
 
 // Shootif (global.PlayerStop == 0) {
 if (mouse_check_button_pressed(mb_left) && Reload <=0 && global.PlayerStop == 0) { 
-part_type_direction(pt, _real_angle - 15, _real_angle + 15, 0, 0);
-part_particles_create(ps, _muzzle_x, _muzzle_y, pt, 10);
-ArmRecoil = irandom_range(10, 20);
-Reload = ReloadMax;
-audio_play_sound(Shoot_SN,1,0,global.SoundVolume);
-var _dist = 1000; 
-var _end_x = x + lengthdir_x(_dist, _real_angle);
-var _end_y = y + lengthdir_y(_dist, _real_angle);
-
-var _hit = collision_line(x, y, _end_x, _end_y, Dolboyob_O, false, true);
-
-if (_hit != noone) {
-    _hit.dead = 1;
-}
-
+Shoot(_real_angle, _muzzle_x, _muzzle_y);
 }
 
 break;
