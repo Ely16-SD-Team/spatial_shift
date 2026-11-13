@@ -1,4 +1,4 @@
-draw_text(10,10,"SD_Team 2026 for Restless Jam 2")
+draw_text(10,10,$"{CleredRoom}SD_Team 2026 for Restless Jam 2")
 
 var _cam_height = camera_get_view_height(view_camera[0]);
 var _cam_width = camera_get_view_width(view_camera[0]);
