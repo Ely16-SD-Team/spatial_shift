@@ -121,7 +121,7 @@ function Shoot(_angle, _muzzle_x, _muzzle_y) {
     audio_play_sound(Shoot_SN, 1, 0, global.SoundVolume);
     
 
-var _dist = 1000;
+var _dist = 350;
 var _start_x = x;
 var _start_y = y - 32;
 

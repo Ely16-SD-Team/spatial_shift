@@ -132,7 +132,13 @@ if (room == Menu_rm || room == Bathroom_01_rm || room == VideoHouse_01_rm) {
 
 // vave 
 
+if (instance_number(Dolboyob_O) > 0) { wave = 1 }
 
+if (wave == 1) {
+if (instance_number(Dolboyob_O) <= 0) { wave = 0; waveAnim = 5; instance_destroy(Vawe_O) }
+}
+
+if (waveAnim > 0) { waveAnim -= _dt; }
 
 
 
