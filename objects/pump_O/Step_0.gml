@@ -1,8 +1,8 @@
 var _dt = min(0.1, delta_time / 1000000);
 vsp += grav;
 
-if (place_meeting(x + hsp, y, obj_wall)) {
-    while (!place_meeting(x + sign(hsp), y, obj_wall)) {
+if (place_meeting(x + hsp, y, AllWall_O)) {
+    while (!place_meeting(x + sign(hsp), y, AllWall_O)) {
         x += sign(hsp);
     }
     hsp = -hsp * bounce; 
@@ -10,12 +10,10 @@ if (place_meeting(x + hsp, y, obj_wall)) {
 }
 x += hsp;
 
-var _floor_y = 250;
-
-if (place_meeting(x, y + vsp, obj_wall) || (y + vsp >= _floor_y && vsp > 0)) {
+if (place_meeting(x, y + vsp, AllWall_O) || (y + vsp >= _floor_y && vsp > 0)) {
     
-    if (place_meeting(x, y + vsp, obj_wall)) {
-        while (!place_meeting(x, y + sign(vsp), obj_wall)) {
+    if (place_meeting(x, y + vsp, AllWall_O)) {
+        while (!place_meeting(x, y + sign(vsp), AllWall_O)) {
             y += sign(vsp);
         }
     } 
