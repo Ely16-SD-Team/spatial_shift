@@ -59,7 +59,7 @@ if (global.Catarsis == 1) && (room != isc1 && room != isc2 && room != isc3) {
 	noise_timer -= _dt;
 	if (noise_timer <= 0) {
 	    Noise_st();
-	    noise_timer = random_range(2, 5);
+	    noise_timer = random_range(5, 15);
 		global.Pizdec ++;
 	}
 
