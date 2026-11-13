@@ -74,7 +74,6 @@ ps = part_system_create();
 pt = part_type_create();
 part_system_depth(ps, -100);
 // setup a default particle
-part_type_blend(pt, 1);
 part_type_shape(pt, pt_shape_pixel);
 part_type_size(pt, 3, 2, 0, 0);
 part_type_scale(pt, 1, 1);

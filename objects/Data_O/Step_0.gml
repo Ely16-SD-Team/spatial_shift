@@ -123,3 +123,23 @@ for (var i = 0; i < array_length(my_objects); i++) {
     }
 }
 
+// vave 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
