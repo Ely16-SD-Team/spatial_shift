@@ -56,10 +56,11 @@ var isc3 = Bathroom_new_01_rm
 var isc4 = VideoHouse_02_rm_1
 var isc5 = VideoHouse_02_rm_2
 var isc6 = VideoHouse_02_rm_3
-
+var isc7 = VideoHouse_03_rm
+var isc8 = VideoHouse_04_rm
 
 if (global.Catarsis == 1) && (room != isc1 && room != isc2 && room != isc3 
-&& room != isc4 && room != isc5 && room != isc6) {
+&& room != isc4 && room != isc5 && room != isc6 && room != isc7 && room != isc8) {
 	noise_timer -= _dt;
 	if (noise_timer <= 0) {
 	    Noise_st();

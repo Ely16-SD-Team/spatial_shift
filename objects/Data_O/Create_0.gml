@@ -32,4 +32,4 @@ waveAnim = 0;
 CleredRoom = [];
 global.CleredSpecial = [];
 
-
+global.Ticket = 0
