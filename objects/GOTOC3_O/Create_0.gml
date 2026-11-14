@@ -1,0 +1,1 @@
+Triger = new GOTO(VideoHouse_02_rm,1080,272);
