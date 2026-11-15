@@ -8,3 +8,5 @@ if audio_is_playing(ost1_ost){
 audio_stop_sound(ost1_ost)
 }
 applhis = 0
+
+timerend = 0

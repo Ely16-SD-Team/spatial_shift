@@ -226,7 +226,7 @@ if (abs(knockback_spd) > 0.1) {
 
 
 
-if (keyboard_check_pressed(vk_f1)) { global.PlayerGun = 1 current_state =  States.PLAYER_SHOOT_IDLE }
+//if (keyboard_check_pressed(vk_f1)) { global.PlayerGun = 1 current_state =  States.PLAYER_SHOOT_IDLE }
 
 if (global.PlayerStop == true) { ChangeToIdle (); }
 

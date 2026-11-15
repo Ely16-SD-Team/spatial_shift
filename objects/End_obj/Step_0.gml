@@ -11,4 +11,8 @@ if (global.Off == 1){
 	light_obj.image_alpha = 0
 	audio_stop_sound(boom_SN)
 	applhis += min(0.1, delta_time / 1000000)
+	timerend += min(0.1, delta_time / 1000000)
+	if timerend >= 0.4{
+		room_goto(Cutscene_rm)
+	}
 }

@@ -1,10 +1,10 @@
 tim ++;
 var _dt = (delta_time / 1000000)
 
-if keyboard_check_pressed(vk_right) {
-	if (room_next(room) != -1) { room_goto_next() } 
-	else { room_goto(room_first) }
-}
+//if keyboard_check_pressed(vk_right) {
+//	if (room_next(room) != -1) { room_goto_next() } 
+//	else { room_goto(room_first) }
+//}
 
 // Camera 
 if (instance_exists(Player_O)) {
@@ -49,7 +49,7 @@ if (global.RoomSkip == true) {
 // Audion
 audio_set_master_gain(0,global.SoundVolume)
 
-// 8===D 8===D 8===D
+// 8===D 8===D 8===D 8===D 8===D 8===D 8===D 8===D
 var isc1 = RoomCatarsis_new_01_rm 
 var isc2 = Bedsrum_new_03_rm
 var isc3 = Bathroom_new_01_rm
@@ -58,9 +58,12 @@ var isc5 = VideoHouse_02_rm_2
 var isc6 = VideoHouse_02_rm_3
 var isc7 = VideoHouse_03_rm
 var isc8 = VideoHouse_04_rm
+var isc9 = Menu_rm
+var isc10 = Cutscene_rm
+var isc11 = Start_rm
 
 if (global.Catarsis == 1) && (room != isc1 && room != isc2 && room != isc3 
-&& room != isc4 && room != isc5 && room != isc6 && room != isc7 && room != isc8) {
+&& room != isc4 && room != isc5 && room != isc6 && room != isc7 && room != isc8 && room != isc9 && room != isc10 && room != isc11) {
 	noise_timer -= _dt;
 	if (noise_timer <= 0) {
 	    Noise_st();
@@ -106,7 +109,7 @@ if (global.PostAnim == 1) { instance_create_depth(0,0,0,PostCatarsis_O) global.P
 
 Camera_Shake_Update()
 
-if keyboard_check_pressed(ord("N")) { global.Catarsis = 1 }
+//if keyboard_check_pressed(ord("N")) { global.Catarsis = 1 }
 
 
 

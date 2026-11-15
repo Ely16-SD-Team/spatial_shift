@@ -1,4 +1,4 @@
-if (room != Menu_rm && room != EndRoom_rm){
+if (room != Menu_rm && room != EndRoom_rm && room != Cutscene_rm){
 if (global.ost1 == 1){
 	if !audio_is_playing(ost1_ost){
 		audio_play_sound(ost1_ost, 1, 0)
