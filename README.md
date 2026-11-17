@@ -37,4 +37,3 @@ License and Rights
 
 • Source Code: You are free to take, study, modify, and use the code of this project however you like.
 • Intellectual Property: Rights to the game MindShift itself, its title, and original assets belong to SD-Team.
-Могу также перевести короткое описание (About) для шапки репозитория на GitHub — просто скажите, если понадобится!
